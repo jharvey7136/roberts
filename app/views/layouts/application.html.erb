@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Roberts</title>
+    <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+
+  <div>
+    <div><%= link_to "Home", root_path%></div>
+    <div><%= link_to "Campground", campground_path%></div>
+    <div><%= link_to "Mobile Home Park", mobilhomepark_path%></div>
+    <div><%= link_to "Estate Park", estatepark_path%></div>
+  </div>
 
   <body>
     <%= yield %>

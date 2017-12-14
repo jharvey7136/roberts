@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -23,11 +22,3 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-=======
-# Roberts Enterprise
-##### John Harvey, Rawan Alfaraj
-
-Web Application for Roberts Enterprise located in Three Rivers, Michigan.
-
-
->>>>>>> 74040d6762f9cd4b823f23d5fb251807278457a9
