@@ -3,7 +3,7 @@
 one:
   name: MyString
   email: MyString
+  password_digest: foobartest
 
-two:
-  name: MyString
-  email: MyString
+
+
