@@ -1,3 +1,51 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.col-xs-12 {
+  white-space: nowrap !important;
+  max-width: 100%;
+  overflow: auto;
+}
+.col-xs-3 {
+  float: none !important;
+  display: inline-block !important;
+  width: 33%;
+
+}
+.col-xs-3 a {
+  height: 300px;
+  border-radius: 25px;
+  background: white;
+  display: block;
+}
+
+.col-xs-3:hover {
+   opacity: 1;
+}
+
+.btn-img {
+    display: block;
+    border-radius: 25px;
+    margin-top: 30px;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+    border: 2px dotted red ;
+}
+
+.btn-img .img-wrap {
+    border-radius: 25px;
+}
+
+
+.btn-img:hover .img-wrap {
+    background-color: black;
+    border-radius: 25px;
+}
+
+.btn-img:hover img {
+    opacity: 0.8;
+    border-radius: 25px;
+
+}
