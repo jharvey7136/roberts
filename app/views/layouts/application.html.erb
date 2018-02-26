@@ -15,7 +15,11 @@
       <% flash.each do |message_type, message| %>
         <div class="alert alert-<%= message_type %>"><%= message %></div>
       <% end %>
+
+
+      <%- # 'yield' below will insert content from the view -%>
       <%= yield%>
+
       <%= render 'layouts/footer' %>
       <%= debug(params) if Rails.env.development? %>
     </div>

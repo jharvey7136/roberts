@@ -36,4 +36,29 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_select "title", "Contact | #{@base_title}"
   end
 
+
+  test "should get campground" do
+    get campground_path
+    assert_response :success
+    assert_select "title", "Campground | #{@base_title}"
+  end
+
+  test "should get mobile home park" do
+    get mobilehome_path
+    assert_response :success
+    assert_select "title", "Mobile Home Park | #{@base_title}"
+  end
+
+  test "should get estate park" do
+    get estatepark_path
+    assert_response :success
+    assert_select "title", "Estate Park | #{@base_title}"
+  end
+
+
+
+
+
+
+
 end

@@ -14,5 +14,15 @@ class StaticPagesController < ApplicationController
   def contact
   end
 
+  def campground
+  end
+
+  def mobilehome
+  end
+
+  def estatepark
+  end
+
+
 
 end
