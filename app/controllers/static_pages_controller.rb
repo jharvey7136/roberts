@@ -18,6 +18,7 @@ class StaticPagesController < ApplicationController
   end
 
   def mobilehome
+
   end
 
   def estatepark
