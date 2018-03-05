@@ -24,18 +24,16 @@
 
 }
 
-.col-xs-3:hover {
-   opacity: 1;
-}
+
 
 .btn-img {
     display: block;
     border-radius: 25px;
     margin-top: 30px;
     padding: 0;
-    border: 0;
+
     cursor: pointer;
-    border: 2px dotted red ;
+
 }
 
 .btn-img .img-wrap {
@@ -43,13 +41,3 @@
 }
 
 
-.btn-img:hover .img-wrap {
-    background-color: black;
-    border-radius: 25px;
-}
-
-.btn-img:hover img {
-    opacity: 0.8;
-    border-radius: 25px;
-
-}

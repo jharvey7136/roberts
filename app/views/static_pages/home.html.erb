@@ -1,39 +1,38 @@
 <% provide(:title, 'Home') %>
 
-<div class="center jumbotron">
-  <h1>Welcome to Roberts Enterprise</h1>
+<a name="about"></a>
+<div class="intro-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="intro-message">
+          <h1>Roberts Enterprise</h1>
+          <h3>Three Rivers, Michigan</h3>
+          <hr class="intro-divider">
+          <ul class="list-inline intro-social-buttons">
+            <li>
+              <%= link_to campground_path, class: 'btn btn-default btn-lg' do  %>
+                <i class="fa fa-tree fa-fw"></i>
+                <span class="network-name">Campground</span>
+                <% end %>
+            </li>
+            <li>
+              <%= link_to mobilehome_path, class: 'btn btn-default btn-lg' do  %>
+                <i class="fa fa-home fa-fw"></i>
+                <span class="network-name">Mobile Home Park</span>
+              <% end %>
+            </li>
+            <li>
+              <%= link_to estatepark_path, class: 'btn btn-default btn-lg' do  %>
+                <i class="fa fa-globe fa-fw"></i>
+                <span class="network-name">Estate Park</span>
+              <% end %>
+            </li>
 
-
-
-  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
-
-</div>
-
-<div class="col-xs-12 text-center">
-  <div class="col-xs-3">
-
-    <button class="btn-img">
-      <div class="img-wrap">
-        <%= link_to image_tag("campground.png", :alt => "rss feed"), campground_path %>
+          </ul>
+        </div>
       </div>
-    </button>
-  </div>
-  <div class="col-xs-3">
-
-    <button class="btn-img">
-      <div class="img-wrap">
-        <%= link_to image_tag("mobilehomepark.png", :alt => "rss feed"), mobilehome_path %>
-      </div>
-    </button>
-  </div>
-
-  <div class="col-xs-3">
-
-    <button class="btn-img">
-      <div class="img-wrap">
-        <%= link_to image_tag("estatepark.png", :alt => "rss feed"), estatepark_path %>
-      </div>
-    </button>
+    </div>
   </div>
 </div>
 
