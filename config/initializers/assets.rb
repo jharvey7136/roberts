@@ -13,3 +13,10 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 # folder are already added.
 # Rails.application.config.assets.precompile += %w( admin.js admin.css )
 
+# Adding Webfonts to the Asset Pipeline
+Rails.application.config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
+Rails.application.config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
+
+Rails.application.config.assets.precompile += %w( mdb.js )
+Rails.application.config.assets.precompile += %w( newwow.js )
+

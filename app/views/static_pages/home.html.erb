@@ -1,38 +1,49 @@
 <% provide(:title, 'Home') %>
 
-<a name="about"></a>
-<div class="intro-header">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="intro-message">
-          <h1>Roberts Enterprise</h1>
-          <h3>Three Rivers, Michigan</h3>
-          <hr class="intro-divider">
-          <ul class="list-inline intro-social-buttons">
-            <li>
-              <%= link_to campground_path, class: 'btn btn-default btn-lg' do  %>
-                <i class="fa fa-tree fa-fw"></i>
-                <span class="network-name">Campground</span>
-                <% end %>
-            </li>
-            <li>
-              <%= link_to mobilehome_path, class: 'btn btn-default btn-lg' do  %>
-                <i class="fa fa-home fa-fw"></i>
-                <span class="network-name">Mobile Home Park</span>
-              <% end %>
-            </li>
-            <li>
-              <%= link_to estatepark_path, class: 'btn btn-default btn-lg' do  %>
-                <i class="fa fa-globe fa-fw"></i>
-                <span class="network-name">Estate Park</span>
-              <% end %>
-            </li>
 
-          </ul>
+
+<div class="view hm-indigo-light jarallax" data-jarallax='{"speed": 0.2}'>
+  <div class="full-bg-img">
+    <div class="container flex-center">
+      <div class="row pt-5 mt-3">
+        <div class="col-md-12">
+          <div class="text-center">
+
+
+
+            <h1 class="h1-responsive white-text font-up font-bold mb-3 wow fadeInDown" data-wow-delay="0.3s">
+              <strong>Roberts Enterprise</strong>
+            </h1>
+            <hr class="hr-light mt-4 wow fadeInDown" data-wow-delay="0.4s">
+
+            <h5 class="font-up mb-5 white-text wow fadeInDown" data-wow-delay="0.4s">
+              <strong>Three Rivers, Michigan</strong>
+            </h5>
+
+            <ul class="list-inline intro-social-buttons">
+              <li>
+                <%= link_to campground_path, class: 'btn btn-default btn-lg' do  %>
+                  <i class="fa fa-tree fa-fw"></i>
+                  <span class="network-name">Campground</span>
+                <% end %>
+              </li>
+              <li>
+                <%= link_to mobilehome_path, class: 'btn btn-default btn-lg' do  %>
+                  <i class="fa fa-home fa-fw"></i>
+                  <span class="network-name">Mobile Home Park</span>
+                <% end %>
+              </li>
+              <li>
+                <%= link_to estatepark_path, class: 'btn btn-default btn-lg' do  %>
+                  <i class="fa fa-globe fa-fw"></i>
+                  <span class="network-name">Estate Park</span>
+                <% end %>
+              </li>
+
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-

@@ -1,47 +1,51 @@
 
 
 
-<nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar mdb-color lighten-2" >
 
-  <div class="container topnav">
-    <div class="navbar-header">
+  <div class="container">
 
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+    <a class="navbar-brand" href="#">Roberts Enterprise</a>
+
+
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent-7"  aria-controls="navbarSupportedContent-7"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-        <a class="navbar-brand topnav" href="#">Roberts Enterprise</a>
-    </div>
 
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right ">
-        <li><%= link_to "Home",     root_path %></li>
-        <li><%= link_to "Help",     help_path %></li>
-        <li><%= link_to "About",    about_path %></li>
-        <li><%= link_to "Contact",  contact_path %></li>
 
-        <% if logged_in? %>
-          <li><%= link_to "Users", users_path %></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              Account <b class="caret"></b>
-            </a>
-            <ul class="dropdown-menu">
-              <li><%= link_to "Profile", current_user %></li>
-              <li><%= link_to "Settings", edit_user_path(current_user) %></li>
-              <li class="divider"></li>
-              <li>
-                <%= link_to "Log out", logout_path, method: :delete %>
-              </li>
-            </ul>
-          </li>
-          <% else %>
-        <li><%= link_to "Log in", login_path %></li>
-          <% end %>
-        </ul>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+
+
+          <%= link_to "Home", root_path, {:class => "nav-link waves-effect waves-light"}  %>
+          <span class="sr-only">(current)</span>
+
+        </li>
+        <li class="nav-item">
+          <%= link_to "About", about_path, {:class => "nav-link waves-effect waves-light"}  %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Contact", contact_path, {:class => "nav-link waves-effect waves-light"}  %>
+        </li>
+      </ul>
+
 
     </div>
   </div>
 </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+

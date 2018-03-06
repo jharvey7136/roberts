@@ -1,0 +1,64 @@
+/* line 3, /home/john/Documents/git/roberts/app/assets/stylesheets/templates.scss */
+footer.page-footer {
+  background-color: #555658;
+  margin-top: 2rem;
+}
+
+/* line 8, /home/john/Documents/git/roberts/app/assets/stylesheets/templates.scss */
+.top-nav-collapse {
+  background-color: #7283A7 !important;
+}
+
+/* line 12, /home/john/Documents/git/roberts/app/assets/stylesheets/templates.scss */
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+@media (max-width: 768px) {
+  /* line 17, /home/john/Documents/git/roberts/app/assets/stylesheets/templates.scss */
+  .navbar:not(.top-nav-collapse) {
+    background: #7283A7 !important;
+  }
+}
+/* line 22, /home/john/Documents/git/roberts/app/assets/stylesheets/templates.scss */
+h1 {
+  letter-spacing: 8px;
+}
+
+/* line 26, /home/john/Documents/git/roberts/app/assets/stylesheets/templates.scss */
+h5 {
+  letter-spacing: 3px;
+}
+
+/* line 30, /home/john/Documents/git/roberts/app/assets/stylesheets/templates.scss */
+.hr-light {
+  border-top: 3px solid #fff;
+  width: 80px;
+}
+
+@media (max-width: 740px) {
+  /* line 36, /home/john/Documents/git/roberts/app/assets/stylesheets/templates.scss */
+  .full-height,
+  .full-height body,
+  .full-height header,
+  .full-height header .view {
+    height: 700px;
+  }
+}
+/* line 44, /home/john/Documents/git/roberts/app/assets/stylesheets/templates.scss */
+.full-height,
+.full-height body,
+.full-height header,
+.full-height header .view {
+  height: 99%;
+}
+
+/* line 51, /home/john/Documents/git/roberts/app/assets/stylesheets/templates.scss */
+p {
+  line-height: 1.6rem;
+}
+
+/* line 55, /home/john/Documents/git/roberts/app/assets/stylesheets/templates.scss */
+.font-small {
+  font-size: 0.9rem;
+}
