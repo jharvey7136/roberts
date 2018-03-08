@@ -8,8 +8,6 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-
     <%= render 'layouts/shim' %>
   </head>
 
@@ -26,6 +24,12 @@
 
       <%= render 'layouts/footer' %>
 
+
+      <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+      <script type="text/javascript">
+          new WOW().init();
+      </script>
 
 
 

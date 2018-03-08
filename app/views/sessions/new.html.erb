@@ -1,7 +1,14 @@
 <% provide(:title, "Log in") %>
-<h1>Log in</h1>
 
-<div class="row">
+
+
+
+
+  <div class="container">
+
+<h2 class="h1-responsive font-bold login-top">Log in</h2>
+
+<div class="row wow Fadein" data-wow-delay="0.2s">
   <div class="col-md-6 col-md-offset-3">
     <%= form_for(:session, url: login_path) do |f| %>
 
@@ -17,9 +24,13 @@
         <span>Remember me on this computer</span>
       <% end %>
 
-      <%= f.submit "Log in", class: "btn btn-primary" %>
+      <%= f.submit "Log in", class: "btn btn-primary waves-effect waves-light" %>
     <% end %>
 
     <p>New user? <%= link_to "Sign up now!", signup_path %></p>
   </div>
 </div>
+
+  </div>
+
+
