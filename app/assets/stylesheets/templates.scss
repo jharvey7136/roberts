@@ -17,6 +17,11 @@ footer.page-footer {
   .navbar:not(.top-nav-collapse) {
     background: #8899BF !important;
   }
+
+  .navbar-collapse.collapse.in {
+    display: block!important;
+  }
+
 }
 
 h1 {

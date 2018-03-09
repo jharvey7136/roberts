@@ -3,14 +3,13 @@
 
 
 
+<div class="container">
 
-  <div class="container">
+  <h2 class="h1-responsive font-bold login-top">Log in</h2>
 
-<h2 class="h1-responsive font-bold login-top">Log in</h2>
-
-<div class="row wow Fadein" data-wow-delay="0.2s">
-  <div class="col-md-6 col-md-offset-3">
-    <%= form_for(:session, url: login_path) do |f| %>
+  <div class="row wow Fadein" data-wow-delay="0.2s">
+    <div class="col-md-6 col-md-offset-3">
+      <%= form_for(:session, url: login_path) do |f| %>
 
       <%= f.label :email %>
       <%= f.email_field :email, class: 'form-control' %>
@@ -22,15 +21,14 @@
       <%= f.label :remember_me, class: "checkbox inline" do %>
         <%= f.check_box :remember_me %>
         <span>Remember me on this computer</span>
-      <% end %>
+        <% end %>
 
       <%= f.submit "Log in", class: "btn btn-primary waves-effect waves-light" %>
-    <% end %>
+      <% end %>
 
-    <p>New user? <%= link_to "Sign up now!", signup_path %></p>
+      <p>New user? <%= link_to "Sign up now!", signup_path %></p>
+    </div>
   </div>
 </div>
-
-  </div>
 
 
