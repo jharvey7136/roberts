@@ -1,21 +1,21 @@
 
 
 footer.page-footer {
-  background-color: #555658;
+  background-color: #373737;
   margin-top: 0;
 }
 
 .top-nav-collapse {
-  background-color: #7283A7 !important;
+  background-color: #373737 !important;
 }
 
 .navbar:not(.top-nav-collapse) {
-  background-color: #8899BF !important;
+  background-color: #373737 !important;
 }
 
 @media (max-width: 768px) {
   .navbar:not(.top-nav-collapse) {
-    background: #8899BF !important;
+    background: #373737 !important;
   }
 
   .navbar-collapse.collapse.in {
@@ -33,7 +33,7 @@ h5 {
 }
 
 .hr-light {
-  border-top: 3px solid #fff;
+  border-top: 3px solid #373737;
   width: 80px;
 }
 
@@ -61,6 +61,53 @@ h5 {
 .login-top {
   margin-top: 100px;
 }
+
+
+.home-bg .mask,
+.home-bg .full-bg-img {
+  background-color: #f4f4f4;
+}
+
+.btn-default {
+  background-color: #c0b283 !important;
+  color: #fff !important; }
+.btn-default:hover {
+  background-color: rgba(192, 178, 131, 0.75) !important; }
+.btn-default:focus, .btn-default:active, .btn-default.active {
+  background-color: #c0b283; }
+.btn-default.dropdown-toggle {
+  background-color: rgb(192, 178, 131) !important; }
+.btn-default.dropdown-toggle:hover, .btn-default.dropdown-toggle:focus {
+  background-color: #c0b283 !important; }
+.btn-default:not([disabled]):not(.disabled):active, .btn-default:not([disabled]):not(.disabled).active,
+.show > .btn-default.dropdown-toggle {
+  background-color: #c0b283 !important; }
+
+.introfont {
+  color: #373737;
+}
+
+.font-up {
+  text-transform: uppercase; }
+
+.view {
+  overflow: hidden;
+  position: relative;
+  cursor: default; }
+.view .mask {
+  background-attachment: fixed; }
+.view .mask,
+.view .full-bg-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0; }
+.view img, .view video {
+  display: block;
+  position: relative; }
+
 
 
 

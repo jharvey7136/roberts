@@ -24,6 +24,9 @@ class StaticPagesController < ApplicationController
   def estatepark
   end
 
+  def dashboard
+  end
+
 
 
 end
