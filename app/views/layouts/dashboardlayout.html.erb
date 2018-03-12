@@ -1,0 +1,47 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="full-height">
+<head>
+  <title><%= full_title(yield(:title)) %></title>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <%= stylesheet_link_tag    'application' %>
+
+  <%= render 'layouts/shim' %>
+</head>
+
+<body>
+  <%= render 'layouts/header' %>
+
+  <% flash.each do |message_type, message| %>
+    <div class="alert alert-<%= message_type %>"><%= message %></div>
+  <% end %>
+
+  <%= render 'layouts/sidebar' %>
+
+
+  <%- # 'yield' below will insert content from the view -%>
+
+
+
+
+
+
+  <%= render 'layouts/footer' %>
+
+
+  <%= javascript_include_tag 'application' %>
+
+  <script type="text/javascript">
+    new WOW().init();
+  </script>
+
+
+
+
+</body>
+</html>

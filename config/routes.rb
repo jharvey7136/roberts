@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   get  '/campground', to: 'static_pages#campground'
   get  '/mobilehome', to: 'static_pages#mobilehome'
   get  '/estatepark', to: 'static_pages#estatepark'
-  get  '/dashboard',  to: 'static_pages#dashboard'
+
 
 
   get  '/signup',     to: 'users#new'

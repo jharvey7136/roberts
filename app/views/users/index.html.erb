@@ -1,10 +1,26 @@
 <% provide(:title, 'All users') %>
-<h1>All users</h1>
 
-<%= will_paginate %>
 
-<ul class="users">
-  <%= render @users %>
-</ul>
 
-<%= will_paginate %>
+<% content_for :content do %>
+
+  <div id="content">
+
+    <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+      Toggle Sidebar
+    </button>
+
+    <h2>All users</h2>
+
+    <%= will_paginate %>
+
+    <ul class="users">
+      <%= render @users %>
+    </ul>
+
+    <%= will_paginate %>
+
+  </div>
+
+
+<% end %>
