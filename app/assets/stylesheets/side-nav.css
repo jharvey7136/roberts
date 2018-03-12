@@ -73,9 +73,16 @@ ul.CTAs a {
     margin-bottom: 5px;
 }
 a.download {
-    background: #fff;
-    color: #373737;
+    background: #373737;
+    color: #f4f4f4;
 }
+a.download:hover {
+    background: #f4f4f4 !important;
+    color: #373737 !important;
+}
+
+
+
 a.article, a.article:hover {
     background: #373737 !important;
     color: #fff !important;
@@ -101,9 +108,17 @@ a.article, a.article:hover {
     width: 100%;
 }
 
-.btn-tog {
-    color: rgba(244,244,244,0.85);
-    background-color: rgba(55,55,55,0.85);
+
+.btn-info {
+    color: #fff !important;
+    background-color: #c0b283 !important;
+    border-color: #373737 !important;
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
 }
 
 
@@ -152,11 +167,7 @@ a, a:hover, a:focus {
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-btn {
-    box-shadow: none;
-    outline: none !important;
-    border: none;
-}
+
 
 .line {
     width: 100%;
