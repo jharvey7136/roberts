@@ -1,67 +1,80 @@
+
+
+
+
+
 <%= stylesheet_link_tag    'side-nav' %>
 
 
-<div class="container">
+  <div id="wrapper">
 
+    <div class="overlay"></div>
 
-  <div class="wrapper">
+    <!-- Sidebar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+      <ul class="nav sidebar-nav">
+        <li class="sidebar-brand"> <a href="#">Dashboard </a> </li>
 
-    <nav id="sidebar">
-
-      <div class="sidebar-header">
-        <h3>Dashboard</h3>
-      </div>
-
-      <!-- Sidebar Links -->
-      <ul class="list-unstyled components">
-
-        <li class="active">
-          <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
-            Home <b class="caret"> </b>
-          </a>
-          <ul class="collapse list-unstyled" id="homeSubmenu">
-            <li><a href="#">Home 1</a></li>
-            <li><a href="#">Home 2</a></li>
-            <li><a href="#">Home 3</a></li>
-          </ul>
+        <li>
+        <%= link_to root_path do  %>
+          <i class="fa fa-fw fa-home"></i>
+          <span class="network-name">Home</span>
+        <% end %>
         </li>
 
         <li>
-          <a href="#">
-            About
-          </a>
-          <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">
-            Pages <b class="caret"> </b>
-          </a>
-          <ul class="collapse list-unstyled" id="pageSubmenu">
-            <li><a href="#">Page 1</a></li>
-            <li><a href="#">Page 2</a></li>
-            <li><a href="#">Page 3</a></li>
-          </ul>
+          <%= link_to campground_path do  %>
+            <i class="fa fa-tree fa-fw"></i>
+            <span class="network-name">Campground</span>
+          <% end %>
         </li>
 
 
         <li>
-          <a href="#">
-            Portfolio
-          </a>
+          <%= link_to mobilehome_path do  %>
+            <i class="fa fa-home fa-fw"></i>
+            <span class="network-name">The Village</span>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to estatepark_path do  %>
+            <i class="fa fa-globe fa-fw"></i>
+            <span class="network-name">River Run</span>
+          <% end %>
         </li>
 
         <li>
-          <a href="#">
-            Contact
-          </a>
+          <%= link_to "#" do  %>
+            <i class="fa fa-camera-retro fa-fw"></i>
+            <span class="network-name">Gallery</span>
+          <% end %>
         </li>
+        <li>
+          <%= link_to "#" do  %>
+            <i class="fa fa-newspaper fa-fw"></i>
+            <span class="network-name">News</span>
+          <% end %>
+        </li>
+
+        <li>
+          <%= link_to contact_path do  %>
+            <i class="fa fa-envelope fa-fw"></i>
+            <span class="network-name">Contact</span>
+          <% end %>
+        </li>
+
+        <li>
+          <%= link_to help_path do  %>
+            <i class="fa fa-question-circle fa-fw"></i>
+            <span class="network-name">Help</span>
+          <% end %>
+        </li>
+
+
+
       </ul>
-
-      <ul class="list-unstyled CTAs">
-        <li><a href="#" class="download">Campground</a></li>
-        <li><a href="#" class="download">The Village</a></li>
-        <li><a href="#" class="download">River Run</a></li>
-      </ul>
-
-
     </nav>
+    <!-- /#sidebar-wrapper -->
 
     <%= yield(:content) %>
 
@@ -71,4 +84,4 @@
 
   </div>
 
-</div>
+
