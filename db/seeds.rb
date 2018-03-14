@@ -26,3 +26,9 @@ User.create!(name:  "Example User",
                activated: true,
                activated_at: Time.zone.now)
 end
+
+
+Category.create(name: 'Campground')
+Category.create(name: 'River Run')
+Category.create(name: 'Estate Park')
+Category.create(name: 'Random')

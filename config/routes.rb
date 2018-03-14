@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   get  '/campground', to: 'static_pages#campground'
   get  '/mobilehome', to: 'static_pages#mobilehome'
   get  '/estatepark', to: 'static_pages#estatepark'
+  get  '/blog', to: 'static_pages#blog'
 
 
 
@@ -24,6 +25,7 @@ Rails.application.routes.draw do
   delete '/logout',  to: 'sessions#destroy'
 
   resources :users
+  resources :posts
   resources :account_activations, only: [:edit]
   resources :password_resets,     only: [:new, :create, :edit, :update]
 

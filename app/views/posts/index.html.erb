@@ -1,0 +1,22 @@
+
+
+<div class="post-container container">
+
+  <div class="row">
+
+
+
+    <div class="col-md-12">
+
+      <% @posts.each do |post| %>
+        
+
+        <h1><%= link_to "post.title", post %></h1>
+        <p><%= post.content %></p>
+      <% end %>
+
+    </div>
+
+  </div>
+
+</div>

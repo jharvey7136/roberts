@@ -1,0 +1,20 @@
+
+
+
+<div class="container">
+
+  <div class="row">
+
+
+
+    <div class="col-md-12">
+      <% Category.all.each do |category| %>
+        <li>
+          <%= link_to category.name, posts_path(category: category.name) %>
+        </li>
+      <% end %>
+
+
+    </div>
+  </div>
+</div>
