@@ -1,0 +1,40 @@
+<div class="album text-muted">
+
+  <div class="container">
+
+    <div class="row wow fadeIn " data-wow-delay="0.2s">
+      <div class="col-md-12 mt-5">
+        <h2 class="h1-responsive font-bold">
+          Mobile Home Park Photo Gallery
+        </h2>
+        <hr>
+        <p>
+          <%= link_to "Campground", campground_album_path, :class => 'btn btn-default' %> 
+          <%= link_to "Mobile Home Park", river_run_album_path, :class => 'btn btn-default' %> 
+          <%= link_to "Estate Park", estate_park_album_path, :class => 'btn btn-default' %> 
+        </p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row sortable">
+      <% @river_run_album_items.each do |item| %>
+        <div class="card"> 
+          <%= image_tag item.thumb_image unless item.thumb_image.nil?  %>
+          <p class="card-text">  <%= link_to item.title, album_path(item) %> </p>
+          <%= link_to "Edit", edit_album_path(item.id) %>
+          <%= link_to 'Delete Photo', album_path(item), method: :delete, data: { confirm: 'Are you sure?' } %>
+        </div>
+      <%end%>
+
+    </div>
+
+    <hr>
+
+  </div>
+
+</div>
+
+
+

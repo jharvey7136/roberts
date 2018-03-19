@@ -16,7 +16,9 @@ Rails.application.routes.draw do
   get  '/estatepark', to: 'static_pages#estatepark'
   get  '/blog', to: 'static_pages#blog'
 
-
+  get 'campground-album', to: 'albums#campground'
+  get 'river-run-album', to: 'albums#river_run'
+  get 'estate-park-album', to: 'albums#estate_park'
 
   get  '/signup',     to: 'users#new'
   post '/signup',     to: 'users#create'

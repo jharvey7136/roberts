@@ -11,11 +11,14 @@
 // about supported directives.
 //
 //= require jquery
-//= require jquery_ujs
 //= require bootstrap
+//= require jquery_ujs
+//= require jquery-ui
 //= require rails-ujs
 //= require mdb
 //= require side-nav
+//= require html.sortable
+
 
 
 $(document).ready(function(){
