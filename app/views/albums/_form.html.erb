@@ -1,0 +1,31 @@
+
+<hr>
+<%= form_for(@album_item) do |f| %>
+  <div class="field">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+    <%= f.label :Category %> <br>
+    <%= f.collection_select(:topic_id, Topic.all, :id, :title, {prompt: 'Choose an album' }) %><br>
+
+    <div class="field">
+      <label class="btn btn-default">
+        Upload main image <%= f.file_field :main_image, style:'display:none;' %>
+      </label>
+    </div>
+
+    <div class="field">
+      <label class="btn btn-default">
+        Upload thumb image <%= f.file_field :thumb_image, style:'display:none;' %>
+      </label>
+    </div>
+
+
+  </div>
+
+  <hr>
+
+
+  <div class="actions">
+    <%= f.submit 'Submit photo', class: "btn btn-default btn-lg" %>
+  </div>
+<% end %>

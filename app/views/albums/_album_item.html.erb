@@ -1,0 +1,8 @@
+<div class="card">
+  <%= image_tag album_item.thumb_image unless album_item.thumb_image.nil?  %>
+  <p class="card-text"> 
+    <span><%= link_to album_item.title, album_path(album_item) %> </span>
+    </p>
+  <%= link_to "Edit", edit_album_path(album_item.id) %>
+  <%= link_to 'Delete Photo', album_path(album_item), method: :delete, data: { confirm: 'Are you sure?' } %>
+</div>

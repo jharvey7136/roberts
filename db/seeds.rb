@@ -32,3 +32,8 @@ Category.create(name: 'Campground')
 Category.create(name: 'River Run')
 Category.create(name: 'Estate Park')
 Category.create(name: 'Random')
+
+
+Topic.create!(title: "Campgraound")
+Topic.create!(title: "River Run")
+Topic.create!(title: "Estate Park")
