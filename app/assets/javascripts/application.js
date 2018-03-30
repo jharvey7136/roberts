@@ -18,10 +18,14 @@
 //= require mdb
 //= require side-nav
 //= require html.sortable
+//= require village-map
+//= require campground-map
 
 
 
 $(document).ready(function(){
     $('.dropdown-toggle').dropdown();
 });
+
+
 
