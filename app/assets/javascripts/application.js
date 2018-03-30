@@ -20,6 +20,7 @@
 //= require html.sortable
 //= require village-map
 //= require campground-map
+//= require estate-map
 
 
 
