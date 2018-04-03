@@ -2,21 +2,50 @@
 
 <div class="post-container container">
 
-  <div class="row">
+
+    <!--Section heading-->
+    <h2 class="h1 text-center mb-5">Recent posts</h2>
+    <!--Section description-->
+    <p class="text-center mb-5 pb-5">Keep up to date with news regarding the Campground, River Run, or the Village</p>
+
+
+    <% @posts.each do |post| %>
+    <!--Grid row-->
+    <div class="row">
 
 
 
-    <div class="col-md-12">
+      <!--Grid column-->
+      <div class="col-lg-5 col-xl-4 mb-4">
+        <!--Featured image-->
+        <div class="view overlay rounded z-depth-1-half">
+          <%= image_tag post.image_url.to_s if post.image_url.present? %>
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+      </div>
+      <!--Grid column-->
 
-      <% @posts.each do |post| %>
-        
-
-        <h1><%= link_to "post.title", post %></h1>
-        <p><%= post.content %></p>
-      <% end %>
+      <!--Grid column-->
+      <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
+        <h3 class="mb-3 font-weight-bold dark-grey-text">
+          <strong><%= link_to post.title, post %></strong>
+        </h3>
+        <p class="grey-text"><%= post.content %></p>
+        <p> <%= post.created_at.strftime("%d %b. %Y") %></p>
+      </div>
+      <!--Grid column-->
 
     </div>
+    <!--Grid row-->
+    <hr>
 
-  </div>
+    <% end %>
+
+
 
 </div>
+
+
+
