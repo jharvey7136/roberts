@@ -9,7 +9,7 @@
 
 
     <div class="col-md-12">
-      <%= image_tag @post.image_url.to_s, alt: 'Image', class: 'img-responsive' %>
+      <%= image_tag @post.image_url(:default).to_s, alt: 'Image', class: 'img-responsive' %>
 
       <h1><%= @post.title %></h1>
       <p><%= @post.content %></p>
