@@ -17,6 +17,8 @@ gem 'will_paginate',           '3.1.6'
 gem 'bootstrap-will_paginate', '1.0.0'
 
 gem 'bootstrap-sass',          '~> 3.3.7'
+
+
 gem 'font-awesome-rails'
 gem 'simple-line-icons-rails'
 
