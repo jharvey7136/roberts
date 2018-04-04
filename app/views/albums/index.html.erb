@@ -9,28 +9,39 @@
         <h2 class="h1-responsive font-bold">
            Photo Gallery
         </h2>
-        <h2 class="h1-responsive font-bold">
-          <%= link_to "Add New Photo", new_album_url, :class => 'btn btn-default btn-lg' %> 
-        </h2>
+
         <hr>
-        <p>
-          <%= link_to "Campground", campground_album_path, :class => 'btn btn-default' %> 
-          <%= link_to "Mobile Home Park", river_run_album_path, :class => 'btn btn-default' %> 
-          <%= link_to "Estate Park", estate_park_album_path, :class => 'btn btn-default' %> 
-        </p>
+
+        <ul class="list-inline intro-social-buttons">
+          <li class="inline-btn">
+            <%= link_to "Campground", campground_album_path, :class => 'btn btn-default' %>
+          </li>
+          <li class="inline-btn">
+            <%= link_to "River Run", river_run_album_path, :class => 'btn btn-default' %>
+          </li>
+          <li class="inline-btn">
+            <%= link_to "The Village", estate_park_album_path, :class => 'btn btn-default' %>
+          </li>
+
+          <% if logged_in? && current_user.admin?  %>
+            <li class="inline-btn">
+              <%= link_to "Add New Photo", new_album_url, :class => 'btn btn-default' %>
+            </li>
+          <% end %>
+        </ul>
+
+        <hr>
+
+        <div class="row sortable sortable">
+          <%= render partial: 'album_item', collection: @album_items %>
+        </div>
+
+        <hr>
+
       </div>
+
     </div>
-
-    <hr>
-
-    <div class="row sortable sortable">
-      <%= render partial: 'album_item', collection: @album_items %>
-    </div>
-
-    <hr>
-
   </div>
-
 </div>
 
 
