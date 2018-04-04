@@ -12,6 +12,8 @@
   </div>
 
 
-<%= image_tag @album_item.main_image %>
+<%= image_tag @album_item.image_url(:default), alt: 'Image', class: 'img-responsive' %>
 
 <hr>
+
+</div>

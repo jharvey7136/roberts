@@ -14,7 +14,12 @@
   <%= f.text_field :content, placeholder: 'Type the post text here', class: 'form-control h3' %><br>
 
   <%= f.label :image %><br>
-  <%= f.file_field :image %><br>
+
+  <div class="field">
+    <label class="btn btn-default waves-effect waves-light">
+      Upload main image <%= f.file_field :image %>
+    </label>
+  </div>
 
   <%= f.submit "Create Post", class: "btn btn-default btn-lg waves-effect waves-light"%>
 <% end %>

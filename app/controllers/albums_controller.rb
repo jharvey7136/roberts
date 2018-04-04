@@ -22,7 +22,7 @@ class AlbumsController < ApplicationController
   end
 
   def create
-    @album_item = Album.new(params.require(:album).permit(:title, :topic_id, :main_image, :thumb_image))
+    @album_item = Album.new(params.require(:album).permit(:title, :topic_id, :image))
 
     respond_to do |format|
       if @album_item.save
@@ -42,7 +42,7 @@ class AlbumsController < ApplicationController
     @album_item = Album.find(params[:id])
     
     respond_to do |format|
-      if @album_item.update(params.require(:album).permit(:title, :topic_id, :main_image, :thumb_image))
+      if @album_item.update(params.require(:album).permit(:title, :topic_id, :image))
         format.html { redirect_to albums_path, notice: 'The record successfully updated.' }
       else
         format.html { render :edit }
