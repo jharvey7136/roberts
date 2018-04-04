@@ -1,9 +1,11 @@
 class Album < ApplicationRecord
 
 
-  validates_presence_of :title
+
 
   belongs_to :topic
+
+  validates :title, :topic_id, presence: true
 
 
 

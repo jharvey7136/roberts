@@ -1,7 +1,20 @@
 class AlbumsController < ApplicationController
 
+  before_action :find_album_item, only: [:show, :edit, :update, :destroy]
+
   def index
     @album_items = Album.by_position
+
+    if params[:category].blank?
+      @album_items = Album.by_position
+    else
+      @topic_id = Topic.find_by(name: params[:topic_id]).id
+      @album_items = Album.where(topic_id: @topic_id).order("created_at DESC")
+    end
+
+
+
+
   end
 
   def campground
@@ -60,6 +73,17 @@ class AlbumsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to albums_url, notice: 'Photo was removed.' }
     end
+  end
+
+
+  private
+
+  def post_params
+    params.require(:album).permit(:title, :category_id, :image)
+  end
+
+  def find_album_item
+    @album_item = Album.find(params[:id])
   end
 
 

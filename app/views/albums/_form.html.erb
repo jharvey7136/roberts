@@ -2,10 +2,10 @@
 
 <%= form_for(@album_item) do |f| %>
   <div class="field">
-    <%= f.label :title, class: 'h4'%>
+    <%= f.label :title %>
     <%= f.text_field :title, placeholder: 'Type the post title here', class: 'form-control' %>
 
-    <%= f.label :Category, class: 'h4' %> <br>
+    <%= f.label :Category %> <br>
     <%= f.collection_select(:topic_id, Topic.all, :id, :title, {prompt: 'Choose an album' }) %><br>
 
     <div class="field">

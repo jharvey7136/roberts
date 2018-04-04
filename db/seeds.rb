@@ -15,17 +15,7 @@ User.create!(name:  "Example User",
              activated: true,
              activated_at: Time.zone.now)
 
-99.times do |n|
-  name  = Faker::Name.name
-  email = "example-#{n+1}@railstutorial.org"
-  password = "password"
-  User.create!(name:  name,
-               email: email,
-               password:              password,
-               password_confirmation: password,
-               activated: true,
-               activated_at: Time.zone.now)
-end
+
 
 
 Category.create(name: 'Campground')
@@ -34,6 +24,6 @@ Category.create(name: 'Estate Park')
 Category.create(name: 'Random')
 
 
-Topic.create!(title: "Campgraound")
-Topic.create!(title: "River Run")
-Topic.create!(title: "Estate Park")
+Topic.create(title: 'Campground')
+Topic.create(title: 'River Run')
+Topic.create(title: 'Estate Park')
