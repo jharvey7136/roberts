@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
 
   before_action :find_post, only: [:show, :edit, :update, :destroy]
+  before_action :admin_user,     only: [:new, :create, :update, :destroy, :edit]
 
 
 
@@ -56,6 +57,11 @@ class PostsController < ApplicationController
 
   def find_post
     @post = Post.find(params[:id])
+  end
+
+  # Confirms an admin user.
+  def admin_user
+    redirect_to(root_url) unless logged_in? && current_user.admin?
   end
 
 end

@@ -1,6 +1,7 @@
 class AlbumsController < ApplicationController
 
   before_action :find_album_item, only: [:show, :edit, :update, :destroy]
+  before_action :admin_user,     only: [:new, :create, :update, :destroy, :edit]
 
   def index
     @album_items = Album.by_position
@@ -11,10 +12,6 @@ class AlbumsController < ApplicationController
       @topic_id = Topic.find_by(name: params[:topic_id]).id
       @album_items = Album.where(topic_id: @topic_id).order("created_at DESC")
     end
-
-
-
-
   end
 
   def campground
@@ -84,6 +81,11 @@ class AlbumsController < ApplicationController
 
   def find_album_item
     @album_item = Album.find(params[:id])
+  end
+
+  # Confirms an admin user.
+  def admin_user
+    redirect_to(root_url) unless logged_in? && current_user.admin?
   end
 
 
