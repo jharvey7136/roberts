@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'message/new'
+
   resources :albums
   get 'password_resets/new'
 
@@ -10,7 +12,7 @@ Rails.application.routes.draw do
   root 'static_pages#home'
   get  '/help',       to: 'static_pages#help'
   get  '/about',      to: 'static_pages#about'
-  get  '/contact',    to: 'static_pages#contact'
+  get  '/contact',    to: 'messages#new'
   get  '/campground', to: 'static_pages#campground'
   get  '/mobilehome', to: 'static_pages#mobilehome'
   get  '/estatepark', to: 'static_pages#estatepark'
@@ -21,12 +23,18 @@ Rails.application.routes.draw do
   get '/estate-park-album', to: 'albums#estate_park'
 
 
+
+
   get  '/signup',     to: 'users#new'
   post '/signup',     to: 'users#create'
 
   get    '/login',   to: 'sessions#new'
   post   '/login',   to: 'sessions#create'
   delete '/logout',  to: 'sessions#destroy'
+
+
+
+  resources :messages, only: [:new, :create]
 
   resources :users
   resources :albums
