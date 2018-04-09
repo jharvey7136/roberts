@@ -1,25 +1,48 @@
 
 
 
-<%= form_for @post, html: {multipart: true } do |f| %>
+
+
+
+<div class="card-message">
+
+  <div class="card-body">
+
+
+
+
+  <%= form_for @post, html: {multipart: true } do |f| %>
 
   <%= render 'shared/error_post_messages' %>
 
-  <%= f.collection_select(:category_id, Category.all, :id, :name, {prompt: 'Choose a category' }) %><br>
 
-  <%= f.label :title %><br>
-  <%= f.text_field :title, placeholder: 'Type the post title here', class: 'form-control h3' %><br>
+  <%= f.collection_select(:category_id, Category.all, :id, :name, {prompt: 'Choose a category' }) %>
 
-  <%= f.label :content %><br>
-  <%= f.text_field :content, placeholder: 'Type the post text here', class: 'form-control h3' %><br>
+      <div class="md-form">
+         <i class="fa fa-user prefix grey-text"></i>
 
-  <%= f.label :image %><br>
+         <%= f.text_field :title, placeholder: 'Type the post title here', class: 'form-control' %>
+      </div>
 
-  <div class="field">
-    <label class="btn btn-default waves-effect waves-light">
-      Upload main image <%= f.file_field :image %>
-    </label>
+
+      <div class="md-form">
+        <i class="fa fa-pencil prefix grey-text"></i>
+
+        <%= f.text_field :content, as: :text, required: true, placeholder: 'Type the post text here', class: 'form-control', style: 'height: 100px' %>
+      </div>
+
+      <%= f.label :image %>
+
+      <div class="field">
+        <label>
+        <%= f.file_field :image %>
+        </label>
+      </div>
+
+      <%= f.submit "Create Post", class: "btn btn-default btn-lg waves-effect waves-light"%>
+  <% end %>
   </div>
+    <!--Grid column-->
 
-  <%= f.submit "Create Post", class: "btn btn-default btn-lg waves-effect waves-light"%>
-<% end %>
+
+</div>
