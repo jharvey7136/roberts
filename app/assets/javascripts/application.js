@@ -21,7 +21,7 @@
 //= require village-map
 //= require campground-map
 //= require estate-map
-
+//= require bootstrap-notify
 
 
 $(document).ready(function(){
