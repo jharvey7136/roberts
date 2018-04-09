@@ -12,7 +12,7 @@ class MessagesController < ApplicationController
 
       if @message.deliver
         format.html { redirect_to root_path}
-        format.js   { flash.now[:success] = @message = "Thank you for your message. I'll get back to you soon!" }
+        format.js   { flash.now[:success] = @message = "Message sent successfully. I'll get back to you soon!" }
 
       else
         flash.now[:error] = 'Cannot send message.'

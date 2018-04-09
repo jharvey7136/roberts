@@ -11,7 +11,7 @@
 
 
 
-  <%= form_for @post, html: {multipart: true } do |f| %>
+  <%= form_for @post, html: {multipart: true }, remote: true do |f| %>
 
   <%= render 'shared/error_post_messages' %>
 

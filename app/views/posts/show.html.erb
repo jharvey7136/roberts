@@ -7,19 +7,40 @@
   <div class="row">
 
 
+  <!--Card-->
+  <div class="card card-cascade wider reverse my-4 card-post-show">
 
-    <div class="col-md-12">
-      <%= image_tag @post.image_url(:default).to_s, alt: 'Image', class: 'img-responsive' %>
+    <!--Card image-->
+    <div class="view overlay">
+      <%= image_tag @post.image_url(:default).to_s, alt: 'Image', class: 'img-fluid post-image' %>
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+    <!--/Card image-->
 
-      <h1><%= @post.title %></h1>
-      <p><%= @post.content %></p>
+    <!--Card content-->
+    <div class="card-body text-center">
+      <!--Title-->
+      <h4 class="card-title"><strong><%= @post.title %></strong></h4>
+      <h5 class="indigo-text"><strong><%= @post.created_at.strftime("%d %b. %Y") %></strong></h5>
+
+      <p class="card-text"><%= @post.content %></p>
 
 
-      <%= link_to "Edit", edit_post_path(@post) %>
-      <%= link_to "Delete", @post, method: :delete, data: { confirm: "Are you sure?" } %>
 
-
+      <% if logged_in? && current_user.admin? %>
+        <%= link_to "Edit", edit_post_path(@post) %>
+        <%= link_to "Delete", @post, method: :delete, data: { confirm: "Are you sure?" } %>
+      <% end %>
 
     </div>
+    <!--/.Card content-->
+
+  </div>
+  <!--/.Card-->
+
+
+
   </div>
 </div>
