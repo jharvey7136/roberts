@@ -5,7 +5,14 @@
   <!--Section heading-->
   <h2 class="font-weight-bold text-center h1 py-5">Contact us</h2>
 
+
+
+
   <div class="row">
+
+    <div class="col-sm-12" id="flash-message">
+      <%= render 'flash' %>
+    </div>
 
 
     <!--Grid column-->
@@ -23,7 +30,7 @@
 
 
 
-            <%= form_for @message do |f| %>
+            <%= form_for(@message, remote: true) do |f| %>
 
             <div class="md-form">
               <i class="fa fa-user prefix grey-text"></i>
@@ -51,6 +58,8 @@
             <div class="text-center">
               <%= f.submit "Send Message", class: 'btn btn-default btn-lg waves-effect waves-light' %>
             </div>
+
+
 
             <% end %>
 

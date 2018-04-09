@@ -24,6 +24,7 @@
 //= require bootstrap-notify
 
 
+
 $(document).ready(function(){
     $('.dropdown-toggle').dropdown();
 });

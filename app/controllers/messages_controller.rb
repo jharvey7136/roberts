@@ -8,12 +8,23 @@ class MessagesController < ApplicationController
     @message = Message.new(params[:message])
     @message.request = request
 
-    if @message.deliver
-      redirect_to root_path, notice: 'Message sent successfully'
-    else
-      flash.now[:error] = 'Cannot send message.'
-      render :new
+    respond_to do |format|
+
+      if @message.deliver
+        format.html { redirect_to root_path}
+        format.js   { flash.now[:success] = @message = "Thank you for your message. I'll get back to you soon!" }
+
+      else
+        flash.now[:error] = 'Cannot send message.'
+        render :new
+      end
+
+
+
+
     end
+
+
 
 
   end
