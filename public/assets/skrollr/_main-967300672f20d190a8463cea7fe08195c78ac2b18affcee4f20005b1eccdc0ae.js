@@ -1,4 +1,5 @@
 /*! viewportSize | Author: Tyson Matanich, 2013 | License: MIT */
+
 ( function(n) {
     n.viewportSize={}, n.viewportSize.getHeight = function() {
         return t("Height")}, n.viewportSize.getWidth = function() {
