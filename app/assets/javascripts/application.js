@@ -15,6 +15,7 @@
 //= require jquery_ujs
 //= require jquery-ui
 //= require rails-ujs
+//= require modernizr-2.7.1.min
 //= require mdb
 //= require side-nav
 //= require html.sortable
@@ -22,6 +23,10 @@
 //= require campground-map
 //= require estate-map
 //= require bootstrap-notify
+
+//= require skrollr/imagesloaded
+//= require skrollr/skrollr
+//= require skrollr/_main
 
 
 

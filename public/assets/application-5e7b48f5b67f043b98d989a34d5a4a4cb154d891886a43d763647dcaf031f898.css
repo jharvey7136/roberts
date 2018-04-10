@@ -10,6 +10,7 @@
 
 
  */
+
 /*! jQuery UI - v1.12.1 - 2018-03-04
 * http://jqueryui.com
 * Includes: draggable.css, core.css, resizable.css, selectable.css, sortable.css, accordion.css, autocomplete.css, menu.css, button.css, controlgroup.css, checkboxradio.css, datepicker.css, dialog.css, progressbar.css, selectmenu.css, slider.css, spinner.css, tabs.css, tooltip.css, theme.css
@@ -13272,7 +13273,7 @@ tbody.collapse.show {
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
-  background-color: #e9ecef;
+  background-color: rgba(55, 55, 55, 0.24);
   border-radius: 0.3rem;
 }
 
@@ -18572,6 +18573,371 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+/* line 11, /home/john/Documents/git/roberts/app/assets/stylesheets/normalize.scss */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+/* line 23, /home/john/Documents/git/roberts/app/assets/stylesheets/normalize.scss */
+body {
+  margin: 0;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* line 32, /home/john/Documents/git/roberts/app/assets/stylesheets/normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 45, /home/john/Documents/git/roberts/app/assets/stylesheets/normalize.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 56, /home/john/Documents/git/roberts/app/assets/stylesheets/normalize.scss */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+/* line 68, /home/john/Documents/git/roberts/app/assets/stylesheets/normalize.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 77, /home/john/Documents/git/roberts/app/assets/stylesheets/normalize.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+/* line 87, /home/john/Documents/git/roberts/app/assets/stylesheets/normalize.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 97, /home/john/Documents/git/roberts/app/assets/stylesheets/normalize.scss */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+/* line 108, /home/john/Documents/git/roberts/app/assets/stylesheets/normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 117, /home/john/Documents/git/roberts/app/assets/stylesheets/normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 125, /home/john/Documents/git/roberts/app/assets/stylesheets/normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 129, /home/john/Documents/git/roberts/app/assets/stylesheets/normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+/* line 140, /home/john/Documents/git/roberts/app/assets/stylesheets/normalize.scss */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+/* line 152, /home/john/Documents/git/roberts/app/assets/stylesheets/normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+/* line 168, /home/john/Documents/git/roberts/app/assets/stylesheets/normalize.scss */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+/* line 178, /home/john/Documents/git/roberts/app/assets/stylesheets/normalize.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+/* line 187, /home/john/Documents/git/roberts/app/assets/stylesheets/normalize.scss */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 198, /home/john/Documents/git/roberts/app/assets/stylesheets/normalize.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+/* line 210, /home/john/Documents/git/roberts/app/assets/stylesheets/normalize.scss */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+/* line 221, /home/john/Documents/git/roberts/app/assets/stylesheets/normalize.scss */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 232, /home/john/Documents/git/roberts/app/assets/stylesheets/normalize.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 245, /home/john/Documents/git/roberts/app/assets/stylesheets/normalize.scss */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+/* line 253, /home/john/Documents/git/roberts/app/assets/stylesheets/normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+/* line 262, /home/john/Documents/git/roberts/app/assets/stylesheets/normalize.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 272, /home/john/Documents/git/roberts/app/assets/stylesheets/normalize.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+/* line 282, /home/john/Documents/git/roberts/app/assets/stylesheets/normalize.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+/* line 291, /home/john/Documents/git/roberts/app/assets/stylesheets/normalize.scss */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+/* line 300, /home/john/Documents/git/roberts/app/assets/stylesheets/normalize.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+/* line 312, /home/john/Documents/git/roberts/app/assets/stylesheets/normalize.scss */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+/* line 320, /home/john/Documents/git/roberts/app/assets/stylesheets/normalize.scss */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+/* line 331, /home/john/Documents/git/roberts/app/assets/stylesheets/normalize.scss */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+/* line 339, /home/john/Documents/git/roberts/app/assets/stylesheets/normalize.scss */
+[hidden] {
+  display: none;
+}
+
 /*!
  * Material Design for Bootstrap 4
  * Version: MDB Free 4.4.5
@@ -31623,4 +31989,665 @@ p {
 /* line 118, /home/john/Documents/git/roberts/app/assets/stylesheets/templates.scss */
 .font-small {
   font-size: 0.9rem;
+}
+
+/* line 6, /home/john/Documents/git/roberts/app/assets/stylesheets/posts.scss */
+.post-container {
+  margin-top: 65px;
+}
+
+/* line 16, /home/john/Documents/git/roberts/app/assets/stylesheets/posts.scss */
+.blog-title {
+  letter-spacing: normal !important;
+  color: #0d47a1 !important;
+}
+
+/* line 22, /home/john/Documents/git/roberts/app/assets/stylesheets/posts.scss */
+.blog-home {
+  height: 100vh;
+  margin-top: 65px;
+}
+
+/* line 32, /home/john/Documents/git/roberts/app/assets/stylesheets/posts.scss */
+.card-post-show {
+  width: 68% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* line 42, /home/john/Documents/git/roberts/app/assets/stylesheets/posts.scss */
+.post-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 2, /home/john/Documents/git/roberts/app/assets/stylesheets/albums.scss */
+body {
+  min-height: 50rem;
+  /* Can be removed; just added for demo purposes */
+}
+
+/* line 6, /home/john/Documents/git/roberts/app/assets/stylesheets/albums.scss */
+.navbar {
+  margin-bottom: 0;
+}
+
+/* line 10, /home/john/Documents/git/roberts/app/assets/stylesheets/albums.scss */
+.jumbotron {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  margin-bottom: 0;
+  background-color: #fff;
+}
+
+/* line 17, /home/john/Documents/git/roberts/app/assets/stylesheets/albums.scss */
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+/* line 21, /home/john/Documents/git/roberts/app/assets/stylesheets/albums.scss */
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+/* line 25, /home/john/Documents/git/roberts/app/assets/stylesheets/albums.scss */
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+/* line 29, /home/john/Documents/git/roberts/app/assets/stylesheets/albums.scss */
+.album {
+  min-height: 50rem;
+  /* Can be removed; just added for demo purposes */
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #f7f7f7;
+}
+
+/* line 36, /home/john/Documents/git/roberts/app/assets/stylesheets/albums.scss */
+.card {
+  float: left;
+  width: 33.333%;
+  padding: .75rem;
+  margin-bottom: 2rem;
+  border: 0;
+}
+
+/* line 44, /home/john/Documents/git/roberts/app/assets/stylesheets/albums.scss */
+.card > img {
+  margin-bottom: .75rem;
+}
+
+/* line 48, /home/john/Documents/git/roberts/app/assets/stylesheets/albums.scss */
+.card-text {
+  font-size: 85%;
+}
+
+/* line 52, /home/john/Documents/git/roberts/app/assets/stylesheets/albums.scss */
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* line 57, /home/john/Documents/git/roberts/app/assets/stylesheets/albums.scss */
+footer p {
+  margin-bottom: .25rem;
+}
+
+/* line 61, /home/john/Documents/git/roberts/app/assets/stylesheets/albums.scss */
+.album-form {
+  padding: 20px;
+}
+
+/* line 65, /home/john/Documents/git/roberts/app/assets/stylesheets/albums.scss */
+a {
+  color: #2BBBAD;
+}
+
+/* line 8, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.card-message {
+  width: 100%;
+}
+
+/* line 20, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.text-primary {
+  color: #c0b283 !important;
+}
+
+/* line 24, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.bus-jumbo {
+  background-color: rgba(55, 55, 55, 0.2) !important;
+}
+
+/* line 30, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.media-heading {
+  letter-spacing: normal !important;
+}
+
+/* line 34, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.row-top {
+  padding-top: 15px !important;
+}
+
+/* line 39, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.bus-title {
+  letter-spacing: normal !important;
+}
+
+/* line 44, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.bus-jumbo > .container {
+  max-width: 75vw;
+}
+
+/* line 49, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.bus-page-content {
+  box-shadow: 1px 5px 15px #888888;
+}
+
+/* Pricing Page Styles */
+/* line 59, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.price {
+  display: block;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+/* line 65, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.price sup {
+  top: -20px;
+  left: 2px;
+  font-size: 20px;
+}
+
+/* line 71, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.period {
+  display: block;
+  font-style: italic;
+}
+
+/* line 76, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.btn-img .img-wrap {
+  border-radius: 25px;
+}
+
+/* line 81, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+/* line 89, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel-body {
+  padding: 15px;
+}
+
+/* line 92, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel-heading {
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+/* line 98, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel-heading > .dropdown .dropdown-toggle {
+  color: inherit;
+}
+
+/* line 101, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  color: inherit;
+}
+
+/* line 107, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel-title > a,
+.panel-title > small,
+.panel-title > .small,
+.panel-title > small > a,
+.panel-title > .small > a {
+  color: inherit;
+}
+
+/* line 114, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel-footer {
+  padding: 10px 15px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+/* line 121, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel > .list-group,
+.panel > .panel-collapse > .list-group {
+  margin-bottom: 0;
+}
+
+/* line 125, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel > .list-group .list-group-item,
+.panel > .panel-collapse > .list-group .list-group-item {
+  border-width: 1px 0;
+  border-radius: 0;
+}
+
+/* line 130, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel > .list-group:first-child .list-group-item:first-child,
+.panel > .panel-collapse > .list-group:first-child .list-group-item:first-child {
+  border-top: 0;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+/* line 136, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel > .list-group:last-child .list-group-item:last-child,
+.panel > .panel-collapse > .list-group:last-child .list-group-item:last-child {
+  border-bottom: 0;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+/* line 142, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel > .panel-heading + .panel-collapse > .list-group .list-group-item:first-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* line 146, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel-heading + .list-group .list-group-item:first-child {
+  border-top-width: 0;
+}
+
+/* line 149, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.list-group + .panel-footer {
+  border-top-width: 0;
+}
+
+/* line 152, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel > .table,
+.panel > .table-responsive > .table,
+.panel > .panel-collapse > .table {
+  margin-bottom: 0;
+}
+
+/* line 157, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel > .table caption,
+.panel > .table-responsive > .table caption,
+.panel > .panel-collapse > .table caption {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* line 163, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel > .table:first-child,
+.panel > .table-responsive:first-child > .table:first-child {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+/* line 168, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel > .table:first-child > thead:first-child > tr:first-child,
+.panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child,
+.panel > .table:first-child > tbody:first-child > tr:first-child,
+.panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+/* line 175, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel > .table:first-child > thead:first-child > tr:first-child td:first-child,
+.panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child,
+.panel > .table:first-child > tbody:first-child > tr:first-child td:first-child,
+.panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:first-child,
+.panel > .table:first-child > thead:first-child > tr:first-child th:first-child,
+.panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child,
+.panel > .table:first-child > tbody:first-child > tr:first-child th:first-child,
+.panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child {
+  border-top-left-radius: 3px;
+}
+
+/* line 185, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel > .table:first-child > thead:first-child > tr:first-child td:last-child,
+.panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:last-child,
+.panel > .table:first-child > tbody:first-child > tr:first-child td:last-child,
+.panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:last-child,
+.panel > .table:first-child > thead:first-child > tr:first-child th:last-child,
+.panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:last-child,
+.panel > .table:first-child > tbody:first-child > tr:first-child th:last-child,
+.panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child {
+  border-top-right-radius: 3px;
+}
+
+/* line 195, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel > .table:last-child,
+.panel > .table-responsive:last-child > .table:last-child {
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+/* line 200, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel > .table:last-child > tbody:last-child > tr:last-child,
+.panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child,
+.panel > .table:last-child > tfoot:last-child > tr:last-child,
+.panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child {
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+/* line 207, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel > .table:last-child > tbody:last-child > tr:last-child td:first-child,
+.panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:first-child,
+.panel > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
+.panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
+.panel > .table:last-child > tbody:last-child > tr:last-child th:first-child,
+.panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:first-child,
+.panel > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
+.panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:first-child {
+  border-bottom-left-radius: 3px;
+}
+
+/* line 217, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel > .table:last-child > tbody:last-child > tr:last-child td:last-child,
+.panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:last-child,
+.panel > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
+.panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
+.panel > .table:last-child > tbody:last-child > tr:last-child th:last-child,
+.panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:last-child,
+.panel > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
+.panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:last-child {
+  border-bottom-right-radius: 3px;
+}
+
+/* line 227, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel > .panel-body + .table,
+.panel > .panel-body + .table-responsive,
+.panel > .table + .panel-body,
+.panel > .table-responsive + .panel-body {
+  border-top: 1px solid #ddd;
+}
+
+/* line 233, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel > .table > tbody:first-child > tr:first-child th,
+.panel > .table > tbody:first-child > tr:first-child td {
+  border-top: 0;
+}
+
+/* line 237, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel > .table-bordered,
+.panel > .table-responsive > .table-bordered {
+  border: 0;
+}
+
+/* line 241, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel > .table-bordered > thead > tr > th:first-child,
+.panel > .table-responsive > .table-bordered > thead > tr > th:first-child,
+.panel > .table-bordered > tbody > tr > th:first-child,
+.panel > .table-responsive > .table-bordered > tbody > tr > th:first-child,
+.panel > .table-bordered > tfoot > tr > th:first-child,
+.panel > .table-responsive > .table-bordered > tfoot > tr > th:first-child,
+.panel > .table-bordered > thead > tr > td:first-child,
+.panel > .table-responsive > .table-bordered > thead > tr > td:first-child,
+.panel > .table-bordered > tbody > tr > td:first-child,
+.panel > .table-responsive > .table-bordered > tbody > tr > td:first-child,
+.panel > .table-bordered > tfoot > tr > td:first-child,
+.panel > .table-responsive > .table-bordered > tfoot > tr > td:first-child {
+  border-left: 0;
+}
+
+/* line 255, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel > .table-bordered > thead > tr > th:last-child,
+.panel > .table-responsive > .table-bordered > thead > tr > th:last-child,
+.panel > .table-bordered > tbody > tr > th:last-child,
+.panel > .table-responsive > .table-bordered > tbody > tr > th:last-child,
+.panel > .table-bordered > tfoot > tr > th:last-child,
+.panel > .table-responsive > .table-bordered > tfoot > tr > th:last-child,
+.panel > .table-bordered > thead > tr > td:last-child,
+.panel > .table-responsive > .table-bordered > thead > tr > td:last-child,
+.panel > .table-bordered > tbody > tr > td:last-child,
+.panel > .table-responsive > .table-bordered > tbody > tr > td:last-child,
+.panel > .table-bordered > tfoot > tr > td:last-child,
+.panel > .table-responsive > .table-bordered > tfoot > tr > td:last-child {
+  border-right: 0;
+}
+
+/* line 269, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel > .table-bordered > thead > tr:first-child > td,
+.panel > .table-responsive > .table-bordered > thead > tr:first-child > td,
+.panel > .table-bordered > tbody > tr:first-child > td,
+.panel > .table-responsive > .table-bordered > tbody > tr:first-child > td,
+.panel > .table-bordered > thead > tr:first-child > th,
+.panel > .table-responsive > .table-bordered > thead > tr:first-child > th,
+.panel > .table-bordered > tbody > tr:first-child > th,
+.panel > .table-responsive > .table-bordered > tbody > tr:first-child > th {
+  border-bottom: 0;
+}
+
+/* line 279, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel > .table-bordered > tbody > tr:last-child > td,
+.panel > .table-responsive > .table-bordered > tbody > tr:last-child > td,
+.panel > .table-bordered > tfoot > tr:last-child > td,
+.panel > .table-responsive > .table-bordered > tfoot > tr:last-child > td,
+.panel > .table-bordered > tbody > tr:last-child > th,
+.panel > .table-responsive > .table-bordered > tbody > tr:last-child > th,
+.panel > .table-bordered > tfoot > tr:last-child > th,
+.panel > .table-responsive > .table-bordered > tfoot > tr:last-child > th {
+  border-bottom: 0;
+}
+
+/* line 289, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel > .table-responsive {
+  margin-bottom: 0;
+  border: 0;
+}
+
+/* line 293, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel-group {
+  margin-bottom: 20px;
+}
+
+/* line 296, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel-group .panel {
+  margin-bottom: 0;
+  border-radius: 4px;
+}
+
+/* line 300, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel-group .panel + .panel {
+  margin-top: 5px;
+}
+
+/* line 303, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel-group .panel-heading {
+  border-bottom: 0;
+}
+
+/* line 306, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel-group .panel-heading + .panel-collapse > .panel-body,
+.panel-group .panel-heading + .panel-collapse > .list-group {
+  border-top: 1px solid #ddd;
+}
+
+/* line 310, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel-group .panel-footer {
+  border-top: 0;
+}
+
+/* line 313, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel-group .panel-footer + .panel-collapse .panel-body {
+  border-bottom: 1px solid #ddd;
+}
+
+/* line 316, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel-default {
+  border-color: #ddd;
+}
+
+/* line 319, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel-default > .panel-heading {
+  color: #333;
+  background-color: #f5f5f5;
+  border-color: #ddd;
+}
+
+/* line 324, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #ddd;
+}
+
+/* line 327, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel-default > .panel-heading .badge {
+  color: #f5f5f5;
+  background-color: #333;
+}
+
+/* line 331, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel-default > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #ddd;
+}
+
+/* line 334, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel-primary {
+  border-color: #337ab7;
+}
+
+/* line 337, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel-primary > .panel-heading {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+
+/* line 342, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel-primary > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #337ab7;
+}
+
+/* line 345, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel-primary > .panel-heading .badge {
+  color: #337ab7;
+  background-color: #fff;
+}
+
+/* line 349, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel-primary > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #337ab7;
+}
+
+/* line 352, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel-success {
+  border-color: #d6e9c6;
+}
+
+/* line 355, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel-success > .panel-heading {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+
+/* line 360, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel-success > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #d6e9c6;
+}
+
+/* line 363, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel-success > .panel-heading .badge {
+  color: #dff0d8;
+  background-color: #3c763d;
+}
+
+/* line 367, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel-success > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #d6e9c6;
+}
+
+/* line 370, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel-info {
+  border-color: #bce8f1;
+}
+
+/* line 373, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel-info > .panel-heading {
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+
+/* line 378, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel-info > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #bce8f1;
+}
+
+/* line 381, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel-info > .panel-heading .badge {
+  color: #d9edf7;
+  background-color: #31708f;
+}
+
+/* line 385, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel-info > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #bce8f1;
+}
+
+/* line 388, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel-warning {
+  border-color: #faebcc;
+}
+
+/* line 391, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel-warning > .panel-heading {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+}
+
+/* line 396, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel-warning > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #faebcc;
+}
+
+/* line 399, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel-warning > .panel-heading .badge {
+  color: #fcf8e3;
+  background-color: #8a6d3b;
+}
+
+/* line 403, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel-warning > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #faebcc;
+}
+
+/* line 406, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel-danger {
+  border-color: #ebccd1;
+}
+
+/* line 409, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel-danger > .panel-heading {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+
+/* line 414, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel-danger > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #ebccd1;
+}
+
+/* line 417, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel-danger > .panel-heading .badge {
+  color: #f2dede;
+  background-color: #a94442;
+}
+
+/* line 421, /home/john/Documents/git/roberts/app/assets/stylesheets/static_pages.scss */
+.panel-danger > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #ebccd1;
 }
