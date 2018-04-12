@@ -115,7 +115,7 @@ h2 {
 
 }
 .loading {
-    background: url('../img/ico_loading.gif') no-repeat center center;
+    background: image-url('ico_loading.gif') no-repeat center center;
 }
 section {
     min-width: 960px;
@@ -146,7 +146,7 @@ main {
 }
 /* Slide 1 */
 #slide-1 .bcg {
-  background-image:image-url('stock/blur-botanical-close-up-175274.jpg');
+  background-image:image-url('skrollr/_DSC0185.jpg');
 }
 
 .slide-1-content {
@@ -207,8 +207,15 @@ main {
 
 /* Slide 3 */
 #slide-3 .bcg {
-  background-image:image-url('stock/bloom-blossom-flora-101718.jpg');
+  background-image:image-url('skrollr/_DSC0210.jpg');
 }
+/* End Slide 3 */
+
+
+
+
+
+
 
 
 /* Slide 4 */
@@ -217,7 +224,7 @@ main {
 .curtainContainer .copy {position: absolute; bottom: 30%; left: 0; width: 100%; text-align: center;}
 
 #slide-4 .bcg {
-  background-image:image-url('stock/blossom-blossoms-blue-72161.jpg');
+  background-image:image-url('skrollr/_DSC0043.jpg');
 }
 
 /* Slide 5 */
@@ -225,10 +232,10 @@ main {
   position: relative;
 }
 #slide-5 .bcg {
-  background-image:image-url('stock/bloom-blossom-blue-100756.jpg')
+  background-image:image-url('skrollr/_DSC0233.jpg')
 }
 #slide-5 .bcg2 {
-  background-image:image-url('stock/autumn-clouds-fall-91228.jpg');
+  background-image:image-url('skrollr/_DSC0048.jpg');
   position: fixed;
   bottom: 0;
   left: 0;
