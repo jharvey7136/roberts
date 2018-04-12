@@ -1,0 +1,533 @@
+/*
+ _____   _           _         _                        _
+|_   _| | |         | |       | |                      | |
+  | |   | |__   __ _| |_ ___  | |_ ___  _ __ ___   __ _| |_ ___   ___  ___
+  | |   | '_ \ / _` | __/ _ \ | __/ _ \| '_ ` _ \ / _` | __/ _ \ / _ \/ __|
+ _| |_  | | | | (_| | ||  __/ | || (_) | | | | | | (_| | || (_) |  __/\__ \
+ \___/  |_| |_|\__,_|\__\___|  \__\___/|_| |_| |_|\__,_|\__\___/ \___||___/
+
+Oh nice, welcome to the stylesheet of dreams.
+It has it all. Classes, ID's, comments...the whole lot:)
+Enjoy responsibly!
+@ihatetomatoes
+
+*/
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+/* line 29, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+body {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+/* line 40, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 45, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+/* line 54, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+/* line 67, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+img {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+/* line 75, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/* line 85, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+/* line 93, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Parallax Scroll
+   ========================================================================== */
+/* line 103, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+body, html {
+  height: 100%;
+  min-height: 100%;
+}
+
+/* line 111, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+.no-js {
+  padding-top: 106px;
+}
+
+/* line 114, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+h2 {
+  margin-top: 0;
+}
+
+/* line 118, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+.loading {
+  background: url(/assets/ico_loading-c1cf81bef2ea82eaa43265a5ff786b7cd74e7d5f4f2de104b586f092ca0fb886.gif) no-repeat center center;
+}
+
+/* line 121, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+section {
+  min-width: 960px;
+  opacity: 0;
+}
+
+/* line 125, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+.loaded section,
+.no-js section {
+  opacity: 1;
+  -webkit-transition: opacity 300ms ease-out;
+  -moz-transition: opacity 300ms ease-out;
+  transition: opacity 300ms ease-out;
+}
+
+/* line 132, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+main {
+  overflow-x: hidden;
+}
+
+/* line 140, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+.bcg {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/* Slide 1 */
+/* line 149, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+#slide-1 .bcg {
+  background-image: url(/assets/skrollr/_DSC0185-fc486cd10d1f58b97826603ef40bcbd3cda70ff654fb6b97fbf11cb4a75019c3.jpg);
+}
+
+/* line 153, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+.slide-1-content {
+  max-width: 450px;
+  margin: -150px auto 0 auto;
+  display: table-cell;
+  vertical-align: middle;
+  color: #373737;
+  padding: 0 8%;
+  text-align: center;
+}
+
+/* line 163, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+.slide-1-content h2,
+.copy h2 {
+  color: #f4f4f4;
+  font-size: 100px;
+  line-height: 48px;
+  margin-bottom: 12px;
+}
+
+/* End Slide 1 */
+/* Slide 2 */
+/* line 174, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+#slide-2 .bcg {
+  background: none;
+  background-color: #c0b283;
+  height: 510px;
+  text-align: center;
+}
+
+/* line 181, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+.slide-2-content {
+  max-width: 450px;
+  margin: -150px auto 0 auto;
+  display: table-cell;
+  vertical-align: middle;
+  color: #373737;
+  padding: 0 8%;
+  text-align: center;
+}
+
+/* line 191, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+.slide-2-content h2,
+.copy h2 {
+  color: #373737;
+  font-size: 65px;
+  line-height: 48px;
+  margin-bottom: 12px;
+}
+
+/* line 199, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+.slide-2-content p {
+  width: 400px;
+  margin: 0 auto;
+  color: #373737;
+}
+
+/* End Slide 2 */
+/* Slide 3 */
+/* line 210, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+#slide-3 .bcg {
+  background-image: url(/assets/skrollr/_DSC0210-6e71aee96b4222d62b126e22b6d3da01b160f2711a19473f5b966a360a91238c.jpg);
+}
+
+/* End Slide 3 */
+/* Slide 4 */
+/* line 223, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+.curtainContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* line 224, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+.curtainContainer .curtain {
+  width: 300%;
+  height: 1px;
+  background-color: #000000;
+  position: absolute;
+  top: 25%;
+  left: 0;
+  opacity: 0;
+}
+
+/* line 225, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+.curtainContainer .copy {
+  position: absolute;
+  bottom: 30%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 227, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+#slide-4 .bcg {
+  background-image: url(/assets/skrollr/_DSC0043-27cd4d2179c6780babccfb13bf3509a56d00bcacc3c473354c31a0cd66a47a97.jpg);
+}
+
+/* Slide 5 */
+/* line 232, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+#slide-5 {
+  position: relative;
+}
+
+/* line 235, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+#slide-5 .bcg {
+  background-image: url(/assets/skrollr/_DSC0233-d8b5c08ca13a285ef90e6787fb95d7184f925259510c07017c5f2d7e78881cd8.jpg);
+}
+
+/* line 238, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+#slide-5 .bcg2 {
+  background-image: url(/assets/skrollr/_DSC0048-b160bd6c32259f13794b40af216aba841b463c271622452aad219e661d9b9e4f.jpg);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+/* line 246, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+#slide-5 .bcg3 {
+  background: none;
+  background-color: #010101;
+  z-index: 2;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+}
+
+/* Templates */
+/* line 259, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+.hsContainer {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 268, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+.hsContent {
+  max-width: 450px;
+  margin: -150px auto 0 auto;
+  display: table-cell;
+  vertical-align: middle;
+  color: #ebebeb;
+  padding: 0 8%;
+  text-align: center;
+}
+
+/* line 277, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+.hsContent h2,
+.copy h2 {
+  color: #ffffff;
+  font-size: 45px;
+  line-height: 48px;
+  margin-bottom: 12px;
+}
+
+/* line 284, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+.hsContent p {
+  width: 400px;
+  margin: 0 auto;
+  color: #b2b2b2;
+}
+
+/* line 289, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+.hsContent a {
+  color: #b2b2b2;
+  text-decoration: underline;
+}
+
+/* line 293, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+.bgBlack {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 3px 10px;
+}
+
+/* Templates */
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Image replacement
+ */
+/* line 313, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
+}
+
+/* line 321, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+/* line 332, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+/* line 341, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+/* line 357, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+/* line 371, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* line 387, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 393, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+/* line 402, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+@media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  /* line 429, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 436, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 441, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 445, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  /* line 453, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 459, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 465, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
+
+  /* line 469, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 474, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+  }
+  /* line 482, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 489, /home/john/Documents/git/roberts/app/assets/stylesheets/skrollr.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
