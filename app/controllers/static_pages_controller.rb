@@ -1,4 +1,8 @@
 class StaticPagesController < ApplicationController
+
+
+
+
   def root
   end
 
@@ -9,6 +13,11 @@ class StaticPagesController < ApplicationController
   end
 
   def about
+    respond_to do |format|
+      format.html         # /app/views/static_pages/about.html.erb
+      format.html.mobile  # /app/views/static_pages/about.html+mobile.erb
+
+    end
   end
 
   def contact
