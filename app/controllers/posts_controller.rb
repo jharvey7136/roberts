@@ -23,21 +23,12 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
-
-    respond_to do |format|
-      if @post.save
-
-        format.html {redirect_to @post }
-        format.js   { flash.now[:success] = @message = "Post created successfully." }
-
-      else
-        render :new
-      end
-
-
+    if @post.save
+      flash[:success] = "The post was created!"
+      redirect_to @post
+    else
+      render :new
     end
-
-
   end
 
   def edit
