@@ -11,10 +11,10 @@ module Roberts
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
 
-    config.serve_static_assets = true
+    # config.serve_static_assets = true
 
 
-    config.action_view.automatically_disable_submit_tag = false
+    # config.action_view.automatically_disable_submit_tag = false
 
 
 

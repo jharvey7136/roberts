@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   get 'message/new'
 
-  resources :albums
+  # resources :albums
   get 'password_resets/new'
 
   get 'password_resets/edit'
