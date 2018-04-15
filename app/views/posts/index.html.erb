@@ -28,10 +28,14 @@
       <div class="col-lg-5 col-xl-4 mb-4">
         <!--Featured image-->
         <div class="view overlay rounded z-depth-1-half">
-          <%= image_tag post.image_url(:medium).to_s if post.image_url.present? %>
-          <a>
-            <div class="mask rgba-white-slight"></div>
-          </a>
+
+          <%= link_to(image_tag(post.image_url(:medium).to_s, class: 'img-fluid post-image center-block'), post.image_url(:default).to_s, class: 'img-fluid post-image center-block',
+                      data: {lightbox: "postphots", title: post.title}) if post.image_url.present? %>
+
+
+
+
+          
         </div>
       </div>
       <!--Grid column-->

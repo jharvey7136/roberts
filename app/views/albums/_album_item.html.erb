@@ -2,7 +2,8 @@
 
 <div class="card">
 
-  <%= image_tag album_item.image_url(:medium).to_s %>
+  <%= link_to(image_tag(album_item.image_url(:medium).to_s, class: 'img-fluid post-image center-block'), album_item.image_url(:default).to_s, class: 'img-fluid post-image center-block',
+              data: {lightbox: "albumphotos", title: album_item.title}) %>
 
   <p class="card-text">
     <span><%= link_to album_item.title, album_item %> </span>
