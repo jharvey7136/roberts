@@ -1,27 +1,74 @@
 
 
 
-<div class="blog-home container">
+<div class="container text-center">
+
+  <h1 class="py-5 font-weight-bold">Roberts Enterprise</h1>
+
+  <p class="px-5 mb-5 pb-3 lead grey-text">Roberts Enterprise is proud to offer comfortable accomodations
+    for living and camping at three of our Three Rivers locations.</p>
+
 
   <div class="row">
 
-    <div class="col-md-8">
-
-      <div class="row wow fadeIn" data-wow-delay="0.2s">
-        <div class="col-md-12 mt-5">
-          <h2 class="h1-responsive font-bold">
-            About
-          </h2>
-        </div>
-      </div>
-
-
-
-      <hr>
-
-
+    <div class="col-md-4">
+      <i class="fa fa-tree fa-3x red-text"></i>
+      <h5 class="font-weight-bold mt-3">Roberts Corey Lake Campground</h5>
+      <p class="grey-text">Enjoy peaceful camping in southwest Michigan at Roberts Corey Lake Campground in Three
+        Rivers, MI.
+        Located on Corey Lake, we offer a comfortable get-away from the everyday busy life. Sites are available for
+        campers and RVs only. We do not offer tent camping.
+        Each site comes with water, sewer, and electric (50 and 30 AMP) connections. 700ft of beach front is available
+        for swimming,
+        fishing, and boating. Dock sites are available to rent for the season. A recreational building is availble for
+        guests which includes full service bathrooms and showers.</p>
     </div>
 
+    <div class="col-md-4">
+      <i class="fa fa-home fa-3x cyan-text"></i>
+      <h5 class="font-weight-bold mt-3">The Village</h5>
+      <p class="grey-text">The Village, located near downtown Three Rivers, offers lots for mobile homes and single-wide
+        trailers for rent on a month to month basis. Rates are affordable and
+        include weekly garbage pick-up, seasonal snow plowing, and is in walking distance to downtown.
+      </p>
+    </div>
+
+    <div class="col-md-4">
+      <i class="fa fa-globe fa-3x orange-text"></i>
+      <h5 class="font-weight-bold mt-3">River Run</h5>
+      <p class="grey-text"> St. Joseph County's finest manufactured home community invites you to experience the
+        comfort of country living along the picturesque banks of the Portage River. River Run Estates provides a quite
+        and peaceful
+        setting with an unparalleled location for the modern and convenient lifestyle. River Run offers large home sites
+        with extensive front yards, lots for double-wides and garages,
+        3 car, offsite parking with alley access, on site mailboxes and street lights, sidewalk lined streets, and
+        includes gas, electric, cable, and municipal sewer and water.
+      </p>
+    </div>
+
+
   </div>
+
+  <hr>
+
+  <div id="map-container-camp" class="z-depth-1-half" style="height: 500px"></div>
+
+  <hr>
+
+  <!-- Call to Action Section -->
+  <div class="well">
+    <div class="row">
+      <div class="col-md-8">
+        <p>For more information on, contact us by phone or e-mail.</p>
+      </div>
+      <div class="col-md-4">
+
+
+        <%= link_to 'Contact', contact_path, class: "btn btn-lg btn-default btn-block" %>
+      </div>
+    </div>
+  </div>
+
+  <hr>
 
 </div>
