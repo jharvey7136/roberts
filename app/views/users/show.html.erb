@@ -19,19 +19,36 @@
 
         <div class="col-lg-8 col-lg-offset2">
 
-          <h2> Hello, <%= @user.name %>!</h2>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div class="card">
+            <div class="gravatar_edit">
+              <%= gravatar_for @user %>
+              <a href="http://gravatar.com/emails" target="_blank">Change</a>
+            </div>
 
-          <div class="line"></div>
+            <!--Card content-->
+            <div class="card-body">
+              <!--Title-->
+              <a><h4 class="card-title title-one"><%= @user.name %></h4></a>
+              <p class="card-meta">Joined on <%= @user.created_at.strftime("%d %b. %Y") %></p>
+
+              <!--Text-->
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <hr>
+
+              <%= link_to 'Edit', edit_user_path(@user) %> |
+              <%= link_to 'Back', users_path %>
+
+            </div>
+            <!--Card content-->
 
 
-          <%= link_to 'Edit', edit_user_path(@user) %> |
-          <%= link_to 'Back', users_path %>
+          </div>
 
 
         </div>

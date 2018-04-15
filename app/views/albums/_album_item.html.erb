@@ -4,11 +4,14 @@
 
   <%= image_tag album_item.image_url(:medium).to_s %>
 
-  <p class="card-text"> 
+  <p class="card-text">
     <span><%= link_to album_item.title, album_item %> </span>
     </p>
 
-  <%= link_to "Edit", edit_album_path(album_item.id) %>
-  <%= link_to "Delete Photo", album_path(album_item), method: :delete, data: { confirm: 'Are you sure?' } %>
+
+  <% if logged_in? && current_user.admin? %>
+    <%= link_to "Edit", edit_album_path(album_item.id) %>
+    <%= link_to "Delete Photo", album_path(album_item), method: :delete, data: { confirm: 'Are you sure?' } %>
+  <% end %>
 
 </div>

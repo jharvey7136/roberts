@@ -5,6 +5,7 @@
 <html lang="en" class="full-height">
 <head>
   <title><%= full_title(yield(:title)) %></title>
+  <%= favicon_link_tag asset_path('favicon/favicon.ico'), :rel => 'icon', :type => "image/x-icon" %>
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">

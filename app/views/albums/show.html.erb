@@ -1,19 +1,41 @@
 
-<div class="container">
+<div class="post-container container">
 
-  <div class="row wow fadeIn" data-wow-delay="0.2s">
-    <div class="col-md-12 mt-5">
-      <hr>
-      <h2 class="h1-responsive font-bold">
-        <%= @album_item.title %>
-      </h2>
-      <hr>
+  <div class="row">
+
+
+    <!--Card-->
+    <div class="card card-cascade wider reverse my-4 card-post-show">
+
+      <!--Card image-->
+      <div class="view overlay">
+
+        <%= image_tag @album_item.image_url(:medium).to_s %>
+
+        <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+      <!--/Card image-->
+
+      <!--Card content-->
+      <div class="card-body text-center">
+
+        <!--Title-->
+        <h4 class="card-title"><strong><%= link_to @album_item.title, @album_item %></strong></h4>
+        <h5 class="indigo-text"><strong><%= @album_item.created_at.strftime("%d %b. %Y") %></strong></h5>
+
+
+
+        <% if logged_in? && current_user.admin? %>
+          <%= link_to "Edit", edit_album_path(@album_item.id) %>
+          <%= link_to "Delete Photo", album_path(@album_item), method: :delete, data: {confirm: 'Are you sure?'} %>
+        <% end %>
+      </div>
+
+
+
     </div>
+
   </div>
-
-
-<%= image_tag @album_item.image_url(:default), alt: 'Image', class: 'img-responsive' %>
-
-<hr>
-
 </div>
