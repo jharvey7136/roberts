@@ -5,6 +5,17 @@
 <div class="view home-bg jarallax " data-jarallax='{"speed": 0.2}' id="success">
   <div class="full-bg-img">
     <div class="container flex-center">
+
+      <%= render :partial => 'shared/flash_messages', :flash => flash %>
+
+
+      <script>
+          $(function () { //ready
+              toastr.info('If all three of these are referenced correctly, then this should toast should pop-up.');
+          });
+      </script>
+
+
       <div class="row pt-5 mt-3">
         <div class="col-md-12">
           <div class="text-center">

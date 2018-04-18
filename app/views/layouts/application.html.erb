@@ -9,26 +9,29 @@
 
     <%= stylesheet_link_tag    'application' %>
 
+    <%= javascript_include_tag 'application' %>
+
+
+
     <%= render 'layouts/shim' %>
   </head>
 
   <body>
     <%= render 'layouts/header' %>
 
-      <% flash.each do |message_type, message| %>
-        <div class="alert alert-<%= message_type %>"><%= message %></div>
-      <% end %>
 
+      <%= render :partial => 'shared/flash_messages', :flash => flash %>
 
-      <%- # 'yield' below will insert content from the view -%>
-      <br>
       <%= yield%>
 
       <%= render 'layouts/footer' %>
 
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFiMwgsypzF7FJF484mYRIb3UWVdrXSW8"></script>
 
-      <%= javascript_include_tag 'application' %>
+    <%= javascript_include_tag 'skrollr/imagesloaded' %>
+    <%= javascript_include_tag 'skrollr/skrollr' %>
+    <%= javascript_include_tag 'skrollr/_main' %>
+
 
       <script type="text/javascript">
           new WOW().init();

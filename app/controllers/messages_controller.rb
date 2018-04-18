@@ -15,7 +15,7 @@ class MessagesController < ApplicationController
         format.js   { flash.now[:success] = @message = "Message sent successfully. I'll get back to you soon!" }
 
       else
-        flash.now[:error] = 'Cannot send message.'
+        flash.now[:info] = 'Cannot send message.'
         render :new
       end
 

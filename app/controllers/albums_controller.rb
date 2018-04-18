@@ -36,7 +36,7 @@ class AlbumsController < ApplicationController
 
     respond_to do |format|
       if @album_item.save
-        format.html { redirect_to albums_path, notice: 'Your photo item is now live.' }
+        format.html { redirect_to albums_path, success: 'Your photo item is now live.' }
       else
         format.html { render :new }
       end
@@ -53,7 +53,7 @@ class AlbumsController < ApplicationController
     
     respond_to do |format|
       if @album_item.update(params.require(:album).permit(:title, :topic_id, :image))
-        format.html { redirect_to albums_path, notice: 'The record successfully updated.' }
+        format.html { redirect_to albums_path, success: 'The record successfully updated.' }
       else
         format.html { render :edit }
       end
@@ -68,7 +68,7 @@ class AlbumsController < ApplicationController
     @album_item = Album.find(params[:id])
     @album_item.destroy
     respond_to do |format|
-      format.html { redirect_to albums_url, notice: 'Photo was removed.' }
+      format.html { redirect_to albums_url, success: 'Photo was removed.' }
     end
   end
 

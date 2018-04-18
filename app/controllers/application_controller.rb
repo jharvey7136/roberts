@@ -5,13 +5,14 @@ class ApplicationController < ActionController::Base
 
   before_action :detect_device_format
 
+  add_flash_types :success, :danger, :info, :warning
 
 
 
 
 
 
-private
+  private
 
   def detect_device_format
     case request.user_agent
