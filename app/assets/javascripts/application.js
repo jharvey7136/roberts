@@ -16,7 +16,6 @@
 //= require jquery_ujs
 //= require jquery.turbolinks
 //= require turbolinks-compatibility
-
 //= require rails-ujs
 //= require lightbox
 //= require mdb

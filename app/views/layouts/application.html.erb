@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <%= stylesheet_link_tag    'application' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
-    <%= javascript_include_tag 'application' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload'  %>
 
 
 
@@ -27,6 +27,8 @@
       <%= render 'layouts/footer' %>
 
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFiMwgsypzF7FJF484mYRIb3UWVdrXSW8"></script>
+
+
 
     <%= javascript_include_tag 'skrollr/imagesloaded' %>
     <%= javascript_include_tag 'skrollr/skrollr' %>
