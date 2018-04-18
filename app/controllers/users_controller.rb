@@ -38,7 +38,7 @@ class UsersController < ApplicationController
       if @user.save
         @user.send_activation_email
         flash[:info] = 'Please check your email to activate your account.'
-        format.html { redirect_to root_url, success: 'User was successfully created.' }
+        format.html { redirect_to root_url }
         format.json { render :show, status: :created, location: @user }
       else
         format.html { render :new }
@@ -53,7 +53,6 @@ class UsersController < ApplicationController
     # @user = User.find(params[:id])
     respond_to do |format|
       if @user.update(user_params)
-        flash[:info] = 'Updating profile'
         format.html { redirect_to @user, success: 'User profile was successfully updated.' }
         format.json { render :show, status: :ok, location: @user }
       else
@@ -67,7 +66,6 @@ class UsersController < ApplicationController
   # DELETE /users/1.json
   def destroy
     User.find(params[:id]).destroy
-    flash[:info] = 'Deleting user'
     respond_to do |format|
       format.html { redirect_to users_url, success: 'User was successfully destroyed.'}
       format.json { head :no_content }

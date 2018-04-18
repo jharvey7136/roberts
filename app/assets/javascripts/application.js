@@ -32,7 +32,6 @@ $(document).ready(function(){
     $('.dropdown-toggle').dropdown();
 
 
-    /*global toastr*/
     toastr.options = {
         "closeButton": false,
         "debug": false,
@@ -46,7 +45,7 @@ $(document).ready(function(){
         "hideEasing": "linear",
         "showMethod": "fadeIn",
         "hideMethod": "fadeOut"
-    };
+    }
 
 
 
