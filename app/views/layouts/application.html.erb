@@ -10,6 +10,11 @@
     <%= stylesheet_link_tag    'application' %>
 
 
+    <%= javascript_include_tag 'application'  %>
+
+    <%= javascript_include_tag 'toastr' %>
+
+    <%= stylesheet_link_tag 'toastr' %>
 
 
 
@@ -30,7 +35,10 @@
 
 
 
-    <%= javascript_include_tag 'application'  %>
+    <%= javascript_include_tag 'skrollr/imagesloaded'  %>
+    <%= javascript_include_tag 'skrollr/skrollr'  %>
+    <%= javascript_include_tag 'skrollr/_main'  %>
+
 
       <script type="text/javascript">
           new WOW().init();

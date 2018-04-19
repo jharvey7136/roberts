@@ -14,6 +14,11 @@
 
 
 
+  <%= javascript_include_tag 'application' %>
+
+  <%= javascript_include_tag 'toastr' %>
+
+  <%= stylesheet_link_tag 'toastr' %>
 
 
   <%= render 'layouts/shim' %>
@@ -30,15 +35,7 @@
   <%- # 'yield' below will insert content from the view -%>
 
 
-
-
-
-
   <%= render 'layouts/footer' %>
-
-
-
-  <%= javascript_include_tag 'application'  %>
 
 
   <script type="text/javascript">
