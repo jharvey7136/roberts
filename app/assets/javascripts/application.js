@@ -14,8 +14,7 @@
 //= require jquery
 //= require bootstrap
 //= require jquery_ujs
-//= require jquery.turbolinks
-//= require turbolinks-compatibility
+//= require jquery-ui
 //= require rails-ujs
 //= require lightbox
 //= require mdb
@@ -26,6 +25,11 @@
 //= require estate-map
 //= require bootstrap-notify
 //= require toastr
+
+
+//= require skrollr/imagesloaded
+//= require skrollr/skrollr
+//= require skrollr/_main
 
 
 
