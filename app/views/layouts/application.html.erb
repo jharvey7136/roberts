@@ -7,16 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFiMwgsypzF7FJF484mYRIb3UWVdrXSW8"></script>
+
     <%= stylesheet_link_tag    'application' %>
 
-
-    <%= javascript_include_tag 'application'  %>
-
-    <%= javascript_include_tag 'toastr' %>
-
-    <%= stylesheet_link_tag 'toastr' %>
-
-
+    <%= javascript_include_tag 'application' %>
 
     <%= render 'layouts/shim' %>
   </head>
@@ -31,13 +26,14 @@
 
       <%= render 'layouts/footer' %>
 
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFiMwgsypzF7FJF484mYRIb3UWVdrXSW8"></script>
 
 
 
     <%= javascript_include_tag 'skrollr/imagesloaded'  %>
     <%= javascript_include_tag 'skrollr/skrollr'  %>
     <%= javascript_include_tag 'skrollr/_main'  %>
+
+
 
 
       <script type="text/javascript">

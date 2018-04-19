@@ -12,13 +12,7 @@
 
   <%= stylesheet_link_tag 'application'  %>
 
-
-
   <%= javascript_include_tag 'application' %>
-
-  <%= javascript_include_tag 'toastr' %>
-
-  <%= stylesheet_link_tag 'toastr' %>
 
 
   <%= render 'layouts/shim' %>
@@ -27,15 +21,16 @@
 <body>
   <%= render 'layouts/header' %>
 
-  <%= render :partial => 'shared/flash_messages', :flash => flash %>
+
 
   <%= render 'layouts/sidebar' %>
 
-
-  <%- # 'yield' below will insert content from the view -%>
+  <%= render :partial => 'shared/flash_messages', :flash => flash %>
 
 
   <%= render 'layouts/footer' %>
+
+
 
 
   <script type="text/javascript">

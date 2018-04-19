@@ -24,6 +24,8 @@
 //= require campground-map
 //= require estate-map
 //= require bootstrap-notify
+//= require toastr
+
 
 
 
