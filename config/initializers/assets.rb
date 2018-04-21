@@ -20,7 +20,10 @@ Rails.application.config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
 # Rails.application.config.assets.precompile += %w( application.css application.js )
 
 Rails.application.config.assets.precompile += %w( side-nav.css )
+Rails.application.config.assets.precompile += %w( side-nav.js )
 
+
+Rails.application.config.assets.precompile += %w( skrollr.css )
 Rails.application.config.assets.precompile += %w( skrollr/imagesloaded.js )
 Rails.application.config.assets.precompile += %w( skrollr/skrollr.js )
 Rails.application.config.assets.precompile += %w( skrollr/_main.js )
