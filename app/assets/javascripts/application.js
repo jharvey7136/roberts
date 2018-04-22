@@ -25,7 +25,9 @@
 //= require bootstrap-notify
 //= require toastr
 
-
+//= require skrollr/imagesloaded
+//= require skrollr/skrollr
+//= require skrollr/_main
 
 
 
