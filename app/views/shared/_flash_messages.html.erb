@@ -5,6 +5,7 @@
 <% if flash.present? %>
   <div id='flash'>
     <script>
+<<<<<<< HEAD
         <% if flash[:success] %>
           var $toastContent = $('<span><%= flash[:success] %></span>');
           toastr.options.positionClass = 'toast-top-center';
@@ -23,6 +24,26 @@
           toastr.options.showMethod = 'slideDown';
           toastr.error($toastContent);
         <% end %>
+=======
+      <% if flash[:success] %>
+        var $toastContent = $('<span><%= flash[:success] %></span>');
+        toastr.options.positionClass = 'toast-top-center';
+        toastr.options.showMethod = 'slideDown';
+        toastr.success($toastContent);
+      <% end %>
+      <% if flash[:info] %>
+        var $toastContent = $('<span><%= flash[:info] %></span>');
+        toastr.options.positionClass = 'toast-top-center';
+        toastr.options.showMethod = 'slideDown';
+        toastr.info($toastContent);
+      <% end %>
+      <% if flash[:danger] %>
+        var $toastContent = $('<span><%= flash[:danger] %></span>');
+        toastr.options.positionClass = 'toast-top-center';
+        toastr.options.showMethod = 'slideDown';
+        toastr.error($toastContent);
+      <% end %>
+>>>>>>> 5774842ad25f401fdef00dfacceaeadf5fe0a780
     </script>
   </div>
 <% end %>
