@@ -1,7 +1,16 @@
 require 'test_helper'
 
 class CategoryTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  def setup
+    @cat= Category.new(name: "category1")
+  end
+
+  test "category should be valid" do
+    assert @cat.valid?
+  end
+
+
+
+
+
 end

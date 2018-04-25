@@ -1,9 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
+  title: campground
+  created_at: <%= Time.zone.now %>
+  topic_id: 1
 
 
 two:
-  title: MyString
+  title: river_run
+  created_at: <%= Time.zone.now %>
+  topic_id: 2
 
