@@ -1,8 +1,10 @@
 require 'test_helper'
 
 class MessageControllerTest < ActionDispatch::IntegrationTest
+
+
   test "should get new" do
-    get message_new_url
+    get contact_path
     assert_response :success
   end
 
