@@ -25,19 +25,17 @@
 //= require bootstrap-notify
 //= require toastr
 
+
 //= require skrollr/imagesloaded
 //= require skrollr/skrollr
 //= require skrollr/_main
-
-
+//= require leaflet-map
 
 
 
 
 $(document).ready(function(){
     $('.dropdown-toggle').dropdown();
-
-
 });
 
 

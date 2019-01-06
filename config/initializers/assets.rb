@@ -27,6 +27,7 @@ Rails.application.config.assets.precompile += %w( skrollr.css )
 Rails.application.config.assets.precompile += %w( skrollr/imagesloaded.js )
 Rails.application.config.assets.precompile += %w( skrollr/skrollr.js )
 Rails.application.config.assets.precompile += %w( skrollr/_main.js )
+#Rails.application.config.assets.precompile += %w( leaflet-map.js )
 
 
 
