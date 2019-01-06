@@ -28,7 +28,7 @@ gem 'uglifier',                '3.2.0'
 gem 'coffee-rails',            '4.2.2'
 gem 'jquery-rails',            '4.3.1'
 gem 'figaro'
-
+gem 'pg',  '0.20.0'
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 
 
@@ -56,7 +56,6 @@ group :test do
 end
 
 group :production do
-  gem 'pg',  '0.20.0'
   gem 'fog', '1.42'
 end
 
