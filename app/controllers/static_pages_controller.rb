@@ -26,15 +26,4 @@ class StaticPagesController < ApplicationController
   def campground
   end
 
-  def mobilehome
-
-  end
-
-  def estatepark
-  end
-
-
-
-
-
 end

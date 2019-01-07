@@ -31,10 +31,19 @@ gem 'figaro'
 gem 'pg',  '0.20.0'
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 
+#group :new do
+#  gem "loofah", "2.2.3"
+#  gem "nokogiri", "1.8.2"
+#  gem "rails-html-sanitizer", "1.0.4"
+#  gem "rack", "2.0.6"
+#  gem "activejob", "5.1.6.1"
+#  gem "ffi", "1.9.24"
+#end
+
 
 gem 'jbuilder',                '2.7.0'
 
-gem 'sprockets-rails', :require => 'sprockets/railtie'
+gem 'sprockets'
 
 group :development, :test do
   gem 'sqlite3', '1.3.13'

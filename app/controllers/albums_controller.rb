@@ -18,15 +18,6 @@ class AlbumsController < ApplicationController
     @campground_album_items = Album.campground_album_items.by_position
   end
 
-  def river_run
-    @river_run_album_items = Album.river_run_album_items.by_position
-  end
-
-  def estate_park
-    @estate_park_album_items = Album.estate_park_album_items.by_position
-  end
-
-
   def new
     @album_item = Album.new
   end

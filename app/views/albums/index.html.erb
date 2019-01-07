@@ -13,15 +13,6 @@
         <hr>
 
         <ul class="list-inline intro-social-buttons">
-          <li class="inline-btn">
-            <%= link_to "Campground", campground_album_path, :class => 'btn btn-default' %>
-          </li>
-          <li class="inline-btn">
-            <%= link_to "River Run", river_run_album_path, :class => 'btn btn-default' %>
-          </li>
-          <li class="inline-btn">
-            <%= link_to "The Village", estate_park_album_path, :class => 'btn btn-default' %>
-          </li>
 
           <% if logged_in? && current_user.admin?  %>
             <li class="inline-btn">
@@ -30,7 +21,7 @@
           <% end %>
         </ul>
 
-        <hr>
+
 
         <div class="row sortable sortable">
           <%= render partial: 'album_item', collection: @album_items %>

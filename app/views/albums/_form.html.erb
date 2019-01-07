@@ -9,9 +9,7 @@
     <%= f.collection_select(:topic_id, Topic.all, :id, :title, {prompt: 'Choose an album' }) %><br>
 
     <div class="field">
-
         <%= f.file_field :image, class: 'btn btn-default'  %>
-
     </div>
   </div>
 

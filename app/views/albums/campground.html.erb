@@ -8,15 +8,11 @@
           Campground Photo Gallery
         </h2>
         <hr>
-        <p>
-          <%= link_to "Campground", campground_album_path, :class => 'btn btn-default' %> 
-          <%= link_to "River Run", river_run_album_path, :class => 'btn btn-default' %>
-          <%= link_to "The Village", estate_park_album_path, :class => 'btn btn-default' %>
-        </p>
+
       </div>
     </div>
 
-    <hr>
+
 
     <div class="row sortable">
       <% @campground_album_items.each do |item| %>
