@@ -15,9 +15,9 @@ default: &default
 
 development:
   <<: *default
-  database: <%= ENV["DB_DEVNAME"] %>
-  username: <%= ENV["DB_USERNAME"] %>
-  password: <%= ENV["DB_PASSWORD"] %>
+  database: <%= ENV["databaseDev"] %>
+  username: <%= ENV["dbUserName"] %>
+  password: <%= ENV["dbPassword"] %>
 
 
 # Warning: The database defined as "test" will be erased and
@@ -25,15 +25,15 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: <%= ENV["DB_TESTNAME"] %>
-  username: <%= ENV["DB_USERNAME"] %>
-  password: <%= ENV["DB_PASSWORD"] %>
+  database: <%= ENV["databaseTest"] %>
+  username: <%= ENV["dbUserName"] %>
+  password: <%= ENV["dbPassword"] %>
 
 
 production:
   adapter: postgresql
-  database: robertsProd
+  database: <%= ENV["databaseProd"] %>
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: <%= ENV["DB_USERNAME"] %>
-  password: <%= ENV["DB_PASSWORD"] %>
+  username: <%= ENV["dbUserName"] %>
+  password: <%= ENV["dbPassword"] %>
